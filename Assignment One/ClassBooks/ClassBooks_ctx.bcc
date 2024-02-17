@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
-    <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(STUDENTS)" org.eventb.core.source="/ClassBooks/ClassBooks_ctx.buc|org.eventb.core.contextFile#ClassBooks_ctx|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
-    <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="finite(BOOKS)" org.eventb.core.source="/ClassBooks/ClassBooks_ctx.buc|org.eventb.core.contextFile#ClassBooks_ctx|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
-    <org.eventb.core.scCarrierSet name="BOOKS" org.eventb.core.source="/ClassBooks/ClassBooks_ctx.buc|org.eventb.core.contextFile#ClassBooks_ctx|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(BOOKS)"/>
-    <org.eventb.core.scCarrierSet name="STUDENTS" org.eventb.core.source="/ClassBooks/ClassBooks_ctx.buc|org.eventb.core.contextFile#ClassBooks_ctx|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(STUDENTS)"/>
-</org.eventb.core.scContextFile>
