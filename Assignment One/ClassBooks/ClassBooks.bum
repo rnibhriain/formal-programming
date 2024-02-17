@@ -14,18 +14,18 @@
     </org.eventb.core.event>
     <org.eventb.core.event name="*" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="newbook">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="child"/>
-        <org.eventb.core.action name="(" org.eventb.core.assignment="" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="book_id :∈ BOOKS ∖ hasread[{child}] " org.eventb.core.label="act1"/>
         <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="child ∈ STUDENTS"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="books_query">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="child"/>
         <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="child ∈ STUDENTS"/>
-        <org.eventb.core.action name=")" org.eventb.core.assignment="num_books ≔ card(hasread({child}))" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="num_books ≔ card(hasread[{child}])" org.eventb.core.label="act1"/>
     </org.eventb.core.event>
     <org.eventb.core.variable name="," org.eventb.core.identifier="num_books"/>
-    <org.eventb.core.variable name="4" org.eventb.core.identifier="book"/>
+    <org.eventb.core.variable name="4" org.eventb.core.identifier="book_id"/>
     <org.eventb.core.variable name="2" org.eventb.core.identifier="hasread"/>
     <org.eventb.core.invariant name="3" org.eventb.core.label="inv4" org.eventb.core.predicate="hasread ∈ STUDENTS ↔ BOOKS"/>
     <org.eventb.core.invariant name="1" org.eventb.core.label="inv3" org.eventb.core.predicate="num_books ∈ ℕ1"/>
-    <org.eventb.core.invariant name="5" org.eventb.core.label="inv5" org.eventb.core.predicate="book ∈ BOOKS"/>
+    <org.eventb.core.invariant name="5" org.eventb.core.label="inv5" org.eventb.core.predicate="book_id ∈ BOOKS"/>
 </org.eventb.core.machineFile>
