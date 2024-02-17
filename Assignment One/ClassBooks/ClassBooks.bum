@@ -6,4 +6,8 @@
     <org.eventb.core.event name="*" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="newbook"/>
     <org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="books_query"/>
     <org.eventb.core.variable name="," org.eventb.core.identifier="num_books"/>
+    <org.eventb.core.variable name="-" org.eventb.core.identifier="students"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="inv1" org.eventb.core.predicate="students ⊆ STUDENTS"/>
+    <org.eventb.core.invariant name="/" org.eventb.core.label="inv2" org.eventb.core.predicate="books ⊆ BOOKS"/>
+    <org.eventb.core.variable name="0" org.eventb.core.identifier="books"/>
 </org.eventb.core.machineFile>
