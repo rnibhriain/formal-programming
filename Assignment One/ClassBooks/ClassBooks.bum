@@ -6,23 +6,26 @@
     <org.eventb.core.seesContext name="(" org.eventb.core.target="ClassBooks_ctx"/>
     <org.eventb.core.event name=")" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="record">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="child"/>
-        <org.eventb.core.parameter name="(" org.eventb.core.identifier="book"/>
-        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="child ∈ students"/>
-        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="book ∖ hasread(child)"/>
-        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="book ∈ books"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="bookrec"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="child ∈ STUDENTS"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="{child ↦ bookrec} ⊈ hasread"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="bookrec ∈ BOOKS"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="hasread ≔ hasread ∪ {child ↦ bookrec}" org.eventb.core.label="act1"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="*" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="newbook">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="child"/>
         <org.eventb.core.action name="(" org.eventb.core.assignment="" org.eventb.core.label="act1"/>
-        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="child ∈ students"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="child ∈ STUDENTS"/>
     </org.eventb.core.event>
-    <org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="books_query"/>
+    <org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="books_query">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="child"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="child ∈ STUDENTS"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="num_books ≔ card(hasread({child}))" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
     <org.eventb.core.variable name="," org.eventb.core.identifier="num_books"/>
+    <org.eventb.core.variable name="4" org.eventb.core.identifier="book"/>
     <org.eventb.core.variable name="2" org.eventb.core.identifier="hasread"/>
-    <org.eventb.core.variable name="-" org.eventb.core.identifier="students"/>
-    <org.eventb.core.invariant name="." org.eventb.core.label="inv1" org.eventb.core.predicate="students ⊆ STUDENTS"/>
-    <org.eventb.core.invariant name="/" org.eventb.core.label="inv2" org.eventb.core.predicate="books ⊆ BOOKS"/>
-    <org.eventb.core.variable name="0" org.eventb.core.identifier="books"/>
-    <org.eventb.core.invariant name="3" org.eventb.core.label="inv4" org.eventb.core.predicate="hasread ∈ students ↔ books"/>
+    <org.eventb.core.invariant name="3" org.eventb.core.label="inv4" org.eventb.core.predicate="hasread ∈ STUDENTS ↔ BOOKS"/>
     <org.eventb.core.invariant name="1" org.eventb.core.label="inv3" org.eventb.core.predicate="num_books ∈ ℕ1"/>
+    <org.eventb.core.invariant name="5" org.eventb.core.label="inv5" org.eventb.core.predicate="book ∈ BOOKS"/>
 </org.eventb.core.machineFile>

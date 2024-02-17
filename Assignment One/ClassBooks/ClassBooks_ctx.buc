@@ -2,4 +2,6 @@
 <org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
     <org.eventb.core.carrierSet name="'" org.eventb.core.identifier="STUDENTS"/>
     <org.eventb.core.carrierSet name="(" org.eventb.core.identifier="BOOKS"/>
+    <org.eventb.core.axiom name=")" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(STUDENTS)"/>
+    <org.eventb.core.axiom name="*" org.eventb.core.label="axm2" org.eventb.core.predicate="finite(BOOKS)"/>
 </org.eventb.core.contextFile>
