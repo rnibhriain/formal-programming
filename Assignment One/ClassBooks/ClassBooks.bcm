@@ -3,4 +3,7 @@
     <org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/ClassBooks/ClassBooks_ctx.bcc" org.eventb.core.source="/ClassBooks/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.seesContext#("/>
     <org.eventb.core.scInternalContext name="ClassBooks_ctx"/>
     <org.eventb.core.scEvent name="ClassBooks_cty" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/ClassBooks/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#'"/>
+    <org.eventb.core.scEvent name="ClassBooks_ctz" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="record" org.eventb.core.source="/ClassBooks/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#)"/>
+    <org.eventb.core.scEvent name="ClassBooks_ct{" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="newbook" org.eventb.core.source="/ClassBooks/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#*"/>
+    <org.eventb.core.scEvent name="ClassBooks_ct|" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="books_query" org.eventb.core.source="/ClassBooks/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#+"/>
 </org.eventb.core.scMachineFile>
