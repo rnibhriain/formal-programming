@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="RESPONSE" org.eventb.core.type="ℙ(RESPONSE)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cty" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1"/>
+</org.eventb.core.poFile>

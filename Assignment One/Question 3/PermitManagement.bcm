@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="false" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/Question 3/PermitManagement_ctx.bcc" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.seesContext#("/>
+    <org.eventb.core.scInternalContext name="PermitManagement_ctx">
+        <org.eventb.core.scCarrierSet name="RESPONSE" org.eventb.core.source="/Question 3/PermitManagement_ctx.buc|org.eventb.core.contextFile#PermitManagement_ctx|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(RESPONSE)"/>
+    </org.eventb.core.scInternalContext>
+    <org.eventb.core.scEvent name="PermitManagement_cty" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#'"/>
+</org.eventb.core.scMachineFile>
