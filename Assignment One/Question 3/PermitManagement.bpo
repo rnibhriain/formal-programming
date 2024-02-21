@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="11">
+<org.eventb.core.poFile org.eventb.core.poStamp="13">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="9">
         <org.eventb.core.poIdentifier name="VEHICLES" org.eventb.core.type="ℙ(VEHICLES)"/>
         <org.eventb.core.poIdentifier name="PEOPLE" org.eventb.core.type="ℙ(PEOPLE)"/>
@@ -8,24 +8,27 @@
         <org.eventb.core.poIdentifier name="no" org.eventb.core.type="RESPONSE"/>
         <org.eventb.core.poPredicate name="VEHICLET" org.eventb.core.predicate="RESPONSE={yes,no}" org.eventb.core.source="/Question 3/PermitManagement_ctx.buc|org.eventb.core.contextFile#PermitManagement_ctx|org.eventb.core.axiom#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="11">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="12">
         <org.eventb.core.poIdentifier name="people" org.eventb.core.type="ℙ(PEOPLE)"/>
         <org.eventb.core.poIdentifier name="vehicles" org.eventb.core.type="ℙ(VEHICLES)"/>
+        <org.eventb.core.poIdentifier name="response" org.eventb.core.type="RESPONSE"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_ct{" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_ct|" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="13">
         <org.eventb.core.poIdentifier name="vehicles'" org.eventb.core.type="ℙ(VEHICLES)"/>
+        <org.eventb.core.poIdentifier name="response'" org.eventb.core.type="RESPONSE"/>
         <org.eventb.core.poIdentifier name="people'" org.eventb.core.type="ℙ(PEOPLE)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_ct{" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_ct{" org.eventb.core.poStamp="11"/>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_ct|" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="11"/>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_ct}" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="11"/>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_ct~" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="11"/>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu'" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="11"/>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu(" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="11"/>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu)" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="11"/>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu*" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0"/>
-    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="11">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_ct|" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_ct\|" org.eventb.core.poStamp="13"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_ct}" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_ct~" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu'" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu(" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu)" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu*" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu+" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="12">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="people⊆PEOPLE" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#4"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="vehicles⊆VEHICLES" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#5"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="response∈RESPONSE" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#7"/>
     </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

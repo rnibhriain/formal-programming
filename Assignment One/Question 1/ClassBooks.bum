@@ -27,6 +27,6 @@
     <org.eventb.core.variable name="4" org.eventb.core.identifier="book_id"/>
     <org.eventb.core.variable name="2" org.eventb.core.identifier="hasread"/>
     <org.eventb.core.invariant name="3" org.eventb.core.label="inv4" org.eventb.core.predicate="hasread ∈ STUDENTS ↔ BOOKS"/>
-    <org.eventb.core.invariant name="1" org.eventb.core.label="inv3" org.eventb.core.predicate="num_books ∈ ℕ1"/>
+    <org.eventb.core.invariant name="1" org.eventb.core.label="inv3" org.eventb.core.predicate="num_books ∈ ℕ"/>
     <org.eventb.core.invariant name="5" org.eventb.core.label="inv5" org.eventb.core.predicate="book_id ∈ BOOKS"/>
 </org.eventb.core.machineFile>
