@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(NAMES)" org.eventb.core.source="/Question 2/Club_ctx.buc|org.eventb.core.contextFile#Club_ctx|org.eventb.core.axiom#(" org.eventb.core.theorem="false"/>
     <org.eventb.core.scCarrierSet name="NAMES" org.eventb.core.source="/Question 2/Club_ctx.buc|org.eventb.core.contextFile#Club_ctx|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(NAMES)"/>
 </org.eventb.core.scContextFile>

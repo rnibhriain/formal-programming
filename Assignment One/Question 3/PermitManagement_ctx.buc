@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
     <org.eventb.core.carrierSet name="'" org.eventb.core.identifier="RESPONSE"/>
-    <org.eventb.core.axiom name="(" org.eventb.core.label="axm1" org.eventb.core.predicate="RESPONSE ≔ {yes, no}"/>
+    <org.eventb.core.axiom name="(" org.eventb.core.label="axm1" org.eventb.core.predicate="RESPONSE = {yes, no}"/>
+    <org.eventb.core.constant name=")" org.eventb.core.identifier="yes"/>
+    <org.eventb.core.constant name="*" org.eventb.core.identifier="no"/>
+    <org.eventb.core.carrierSet name="+" org.eventb.core.identifier="PEOPLE"/>
+    <org.eventb.core.carrierSet name="," org.eventb.core.identifier="VEHICLES"/>
 </org.eventb.core.contextFile>
