@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+    <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="MARKS=0 ‥ 100" org.eventb.core.source="/Question 4/AcademicRegistry_ctx.buc|org.eventb.core.contextFile#AcademicRegistry_ctx|org.eventb.core.axiom#(" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="pass_mark∈MARKS" org.eventb.core.source="/Question 4/AcademicRegistry_ctx.buc|org.eventb.core.contextFile#AcademicRegistry_ctx|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="pass_mark" org.eventb.core.source="/Question 4/AcademicRegistry_ctx.buc|org.eventb.core.contextFile#AcademicRegistry_ctx|org.eventb.core.constant#)" org.eventb.core.type="ℤ"/>
+    <org.eventb.core.scCarrierSet name="NAMES" org.eventb.core.source="/Question 4/AcademicRegistry_ctx.buc|org.eventb.core.contextFile#AcademicRegistry_ctx|org.eventb.core.carrierSet#+" org.eventb.core.type="ℙ(NAMES)"/>
+    <org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="MARKS" org.eventb.core.source="/Question 4/AcademicRegistry_ctx.buc|org.eventb.core.contextFile#AcademicRegistry_ctx|org.eventb.core.constant#," org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.scContextFile>

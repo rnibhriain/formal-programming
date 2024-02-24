@@ -1,2 +1,388 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.prFile version="1"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV"/>
+    <org.eventb.core.prProof name="register/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="person∉dom(permits)">
+            <org.eventb.core.prIdent name="PEOPLE" org.eventb.core.type="ℙ(PEOPLE)"/>
+            <org.eventb.core.prIdent name="VEHICLES" org.eventb.core.type="ℙ(VEHICLES)"/>
+            <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+            <org.eventb.core.prIdent name="person" org.eventb.core.type="PEOPLE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="vehicle∉ran(permits)">
+            <org.eventb.core.prIdent name="PEOPLE" org.eventb.core.type="ℙ(PEOPLE)"/>
+            <org.eventb.core.prIdent name="VEHICLES" org.eventb.core.type="ℙ(VEHICLES)"/>
+            <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+            <org.eventb.core.prIdent name="vehicle" org.eventb.core.type="VEHICLES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="response∈RESPONSE">
+            <org.eventb.core.prIdent name="RESPONSE" org.eventb.core.type="ℙ(RESPONSE)"/>
+            <org.eventb.core.prIdent name="response" org.eventb.core.type="RESPONSE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="people⊆PEOPLE">
+            <org.eventb.core.prIdent name="PEOPLE" org.eventb.core.type="ℙ(PEOPLE)"/>
+            <org.eventb.core.prIdent name="people" org.eventb.core.type="ℙ(PEOPLE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬person∈dom(permits)">
+            <org.eventb.core.prIdent name="PEOPLE" org.eventb.core.type="ℙ(PEOPLE)"/>
+            <org.eventb.core.prIdent name="VEHICLES" org.eventb.core.type="ℙ(VEHICLES)"/>
+            <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+            <org.eventb.core.prIdent name="person" org.eventb.core.type="PEOPLE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="vehicles⊆VEHICLES">
+            <org.eventb.core.prIdent name="VEHICLES" org.eventb.core.type="ℙ(VEHICLES)"/>
+            <org.eventb.core.prIdent name="vehicles" org.eventb.core.type="ℙ(VEHICLES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬vehicle∈ran(permits)">
+            <org.eventb.core.prIdent name="PEOPLE" org.eventb.core.type="ℙ(PEOPLE)"/>
+            <org.eventb.core.prIdent name="VEHICLES" org.eventb.core.type="ℙ(VEHICLES)"/>
+            <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+            <org.eventb.core.prIdent name="vehicle" org.eventb.core.type="VEHICLES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv2/INV"/>
+    <org.eventb.core.prProof name="register/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="PEOPLE,RESPONSE,VEHICLES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p3,p5,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="no" org.eventb.core.type="RESPONSE"/>
+        <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+        <org.eventb.core.prIdent name="person" org.eventb.core.type="PEOPLE"/>
+        <org.eventb.core.prIdent name="vehicle" org.eventb.core.type="VEHICLES"/>
+        <org.eventb.core.prIdent name="yes" org.eventb.core.type="RESPONSE"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="person∉dom(permits)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="permits∪{person ↦ vehicle}∈PEOPLE ⤖ VEHICLES"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="vehicle∉ran(permits)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="permits∈PEOPLE ⤖ VEHICLES"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="response∈RESPONSE">
+            <org.eventb.core.prIdent name="response" org.eventb.core.type="RESPONSE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="vehicle∈VEHICLES"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬person∈dom(permits)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="RESPONSE={yes,no}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="person∈PEOPLE"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬vehicle∈ran(permits)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="vehicle/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="PEOPLE,VEHICLES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="p2"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+        <org.eventb.core.prIdent name="person" org.eventb.core.type="PEOPLE"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="person∈dom(permits)∧permits∈PEOPLE ⇸ VEHICLES"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="person∈dom(permits)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permits∈PEOPLE ⤖ VEHICLES"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="permits∈PEOPLE ⇸ VEHICLES"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤∧permits∈PEOPLE ⇸ VEHICLES"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="drugs_check/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="PEOPLE,VEHICLES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="card(permits)&gt;0"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬permits=(∅ ⦂ ℙ(PEOPLE×VEHICLES))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="ran(permits)≠(∅ ⦂ ℙ(VEHICLES))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="deregister/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7" org.eventb.core.prSets="PEOPLE,RESPONSE,VEHICLES" org.eventb.core.psManual="true">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (person∈PEOPLE)" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p4">
+                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="p4"/>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p4">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (permits∈PEOPLE ⤖ VEHICLES)" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p2">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+                                    </org.eventb.core.prAnte>
+                                    <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p2">
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah ({person} ⩤ permits⊆permits)" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p9">
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p5,p2,p1">
+                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p9">
+                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="0" org.eventb.core.prDisplay="Counter-Example found: {VEHICLES={vehicle_out,PEOPLE2}, permits={(vehicle_out|-&gt;vehicle_out),(PEOPLE2|-&gt;PEOPLE2)}, person=vehicle_out}" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p3,p2,p5,p4,p6,p7,p9">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p0"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p9"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                    <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p2"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p4"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="no" org.eventb.core.type="RESPONSE"/>
+        <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+        <org.eventb.core.prIdent name="person" org.eventb.core.type="PEOPLE"/>
+        <org.eventb.core.prIdent name="person_out" org.eventb.core.type="PEOPLE"/>
+        <org.eventb.core.prIdent name="response" org.eventb.core.type="RESPONSE"/>
+        <org.eventb.core.prIdent name="vehicle_out" org.eventb.core.type="VEHICLES"/>
+        <org.eventb.core.prIdent name="yes" org.eventb.core.type="RESPONSE"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="person∈dom(permits)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permits∈PEOPLE ⤖ VEHICLES"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="response∈RESPONSE"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{person} ⩤ permits∈PEOPLE ⤖ VEHICLES"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="person∈PEOPLE"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="RESPONSE={yes,no}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="person_out∈PEOPLE"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="vehicle_out∈VEHICLES"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="{person} ⩤ permits⊆permits"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="de.prob.eventb.disprover.core.disproverReasoner"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.cut"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="owner/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="PEOPLE,RESPONSE,VEHICLES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="p1">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p9"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p10"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p3,p2,p1">
+                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="no" org.eventb.core.type="RESPONSE"/>
+        <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+        <org.eventb.core.prIdent name="vehicle" org.eventb.core.type="VEHICLES"/>
+        <org.eventb.core.prIdent name="yes" org.eventb.core.type="RESPONSE"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="vehicle∈ran(permits)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="permits∼∈VEHICLES ⇸ PEOPLE"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permits∈PEOPLE ⤖ VEHICLES"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="vehicle∈ran(permits)∧permits∼∈VEHICLES ⇸ PEOPLE"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="response∈RESPONSE">
+            <org.eventb.core.prIdent name="response" org.eventb.core.type="RESPONSE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="vehicle∈VEHICLES"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="RESPONSE={yes,no}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="person_out∈PEOPLE">
+            <org.eventb.core.prIdent name="person_out" org.eventb.core.type="PEOPLE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤∧permits∼∈VEHICLES ⇸ PEOPLE"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="vehicle_out∈VEHICLES">
+            <org.eventb.core.prIdent name="vehicle_out" org.eventb.core.type="VEHICLES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="vehicle∈dom(permits∼)∧permits∼∈VEHICLES ⇸ PEOPLE"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/act2/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="VEHICLES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬⊥"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="VEHICLES≠(∅ ⦂ ℙ(VEHICLES))"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬VEHICLES=(∅ ⦂ ℙ(VEHICLES))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/act4/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PEOPLE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬⊥"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬PEOPLE=(∅ ⦂ ℙ(PEOPLE))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="PEOPLE≠(∅ ⦂ ℙ(PEOPLE))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="change_register/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="PEOPLE,VEHICLES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p2"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+        <org.eventb.core.prIdent name="person" org.eventb.core.type="PEOPLE"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="person∈dom(permits)∧permits∈PEOPLE ⇸ VEHICLES"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="person∈dom(permits)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="vehicle∉ran(permits)">
+            <org.eventb.core.prIdent name="vehicle" org.eventb.core.type="VEHICLES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permits∈PEOPLE ⤖ VEHICLES"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="permits∈PEOPLE ⇸ VEHICLES"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬vehicle∈ran(permits)">
+            <org.eventb.core.prIdent name="vehicle" org.eventb.core.type="VEHICLES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤∧permits∈PEOPLE ⇸ VEHICLES"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="change_register/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="PEOPLE,RESPONSE,VEHICLES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p3,p1,p4,p7,p8">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="no" org.eventb.core.type="RESPONSE"/>
+        <org.eventb.core.prIdent name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
+        <org.eventb.core.prIdent name="person" org.eventb.core.type="PEOPLE"/>
+        <org.eventb.core.prIdent name="vehicle" org.eventb.core.type="VEHICLES"/>
+        <org.eventb.core.prIdent name="yes" org.eventb.core.type="RESPONSE"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="permits∈PEOPLE ⤖ VEHICLES"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="response∈RESPONSE">
+            <org.eventb.core.prIdent name="response" org.eventb.core.type="RESPONSE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="vehicle∈VEHICLES"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬vehicle=permits(person)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="person∈PEOPLE"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="person∈dom(permits)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="vehicle∉ran(permits)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="permits∈PEOPLE ⇸ VEHICLES"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="RESPONSE={yes,no}"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="person_out∈PEOPLE">
+            <org.eventb.core.prIdent name="person_out" org.eventb.core.type="PEOPLE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="vehicle≠permits(person)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="permits{person ↦ vehicle}∈PEOPLE ⤖ VEHICLES"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬vehicle∈ran(permits)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="vehicle_out∈VEHICLES">
+            <org.eventb.core.prIdent name="vehicle_out" org.eventb.core.type="VEHICLES"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="drugs_check/grd1/WD" org.eventb.core.psManual="true"/>
+</org.eventb.core.prFile>

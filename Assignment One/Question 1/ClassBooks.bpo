@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="36">
+<org.eventb.core.poFile org.eventb.core.poStamp="38">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="35">
         <org.eventb.core.poIdentifier name="BOOKS" org.eventb.core.type="ℙ(BOOKS)"/>
         <org.eventb.core.poIdentifier name="STUDENTS" org.eventb.core.type="ℙ(STUDENTS)"/>
@@ -11,13 +11,19 @@
         <org.eventb.core.poIdentifier name="book_id" org.eventb.core.type="BOOKS"/>
         <org.eventb.core.poIdentifier name="hasread" org.eventb.core.type="ℙ(STUDENTS×BOOKS)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="36">
+    <org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="37">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#EVTALLHYPClassBooks_ct\|"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.invariant#1"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#'"/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.invariant#1"/>
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/act3/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="37">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#EVTALLHYPClassBooks_ct\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="BOOKS≠(∅ ⦂ ℙ(BOOKS))" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#'|org.eventb.core.action#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#'|org.eventb.core.action#,"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#EVTALLHYPClassBooks_ct\|"/>
     </org.eventb.core.poSequent>
     <org.eventb.core.poPredicateSet name="EVTIDENTClassBooks_ct|" org.eventb.core.parentSet="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="35">
         <org.eventb.core.poIdentifier name="num_books'" org.eventb.core.type="ℤ"/>
@@ -35,7 +41,7 @@
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="{child ↦ bookrec}⊈hasread" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#)|org.eventb.core.guard#+"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="bookrec∈BOOKS" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#)|org.eventb.core.guard#*"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="newbook/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="36">
+    <org.eventb.core.poSequent name="newbook/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="38">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#EVTALLHYPClassBooks_ct~"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="BOOKS ∖ hasread[{child}]≠(∅ ⦂ ℙ(BOOKS))" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#*|org.eventb.core.action#("/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#*|org.eventb.core.action#("/>
@@ -45,8 +51,9 @@
         <org.eventb.core.poIdentifier name="book_id'" org.eventb.core.type="BOOKS"/>
         <org.eventb.core.poIdentifier name="child" org.eventb.core.type="STUDENTS"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPClassBooks_ct~" org.eventb.core.parentSet="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#EVTIDENTClassBooks_ct~" org.eventb.core.poStamp="36">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPClassBooks_ct~" org.eventb.core.parentSet="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#EVTIDENTClassBooks_ct~" org.eventb.core.poStamp="38">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="child∈STUDENTS" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#*|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="BOOKS≠hasread[{child}]" org.eventb.core.source="/Question 1/ClassBooks.bum|org.eventb.core.machineFile#ClassBooks|org.eventb.core.event#*|org.eventb.core.guard#*"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poSequent name="books_query/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 1/ClassBooks.bpo|org.eventb.core.poFile#ClassBooks|org.eventb.core.poPredicateSet#EVTALLHYPClassBooks_cu'"/>
