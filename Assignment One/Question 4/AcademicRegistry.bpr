@@ -590,13 +590,13 @@
         <org.eventb.core.prPred name="p2" org.eventb.core.predicate="pass_mark∈MARKS"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="studentquery/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18" org.eventb.core.prSets="NAMES" org.eventb.core.psManual="true">
+    <org.eventb.core.prProof name="studentquery/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16" org.eventb.core.prSets="NAMES">
         <org.eventb.core.lang name="L"/>
         <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
             <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
-                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p15,p18,p1,p12,p17,p3,p14,p9,p5,p4,p13,p10,p7,p11,p16,p2,p8">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p17"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p18"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p13,p16,p1,p11,p15,p3,p12,p8,p5,p14,p2,p4,p6,p9,p10">
                     <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
                 </org.eventb.core.prRule>
             </org.eventb.core.prAnte>
@@ -608,185 +608,51 @@
         <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
         <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
         <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
         <org.eventb.core.prIdent name="top_mark" org.eventb.core.type="ℤ"/>
         <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(exam)⊆registered"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="resit2∈NAMES ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="dom(results)=dom(exam)"/>
         <org.eventb.core.prPred name="p3" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
         <org.eventb.core.prPred name="p4" org.eventb.core.predicate="stdt∈registered"/>
         <org.eventb.core.prPred name="p5" org.eventb.core.predicate="top_mark∈MARKS"/>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="stdt∈dom(resit1)"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite({exam(stdt)}∪{resit1(stdt)}∪{resit2(stdt)})"/>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="num_sittings∈ℕ"/>
-        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="exam∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="resit1∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="stdt∈dom(exam)"/>
-        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
-        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="pass_mark∈MARKS"/>
-        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="stdt∈dom(resit2)"/>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="card({exam(stdt)}∪{resit1(stdt)}∪{resit2(stdt)})∈ℕ"/>
-        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
-        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="stdt∈NAMES"/>
-        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="finite(exam[{stdt}])"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="num_sittings∈ℕ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="finite(resit1[{stdt}])"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(resit2[{stdt}])"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="pass_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="results∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="card(exam[{stdt}])+card(resit1[{stdt}])+card(resit2[{stdt}])∈ℕ"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="stdt∈NAMES"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="studentquery/act1/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="NAMES">
+    <org.eventb.core.prProof name="studentquery/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="NAMES">
         <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-                    <org.eventb.core.prAnte name="'">
-                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
-                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
-                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7"/>
-                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
-                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p3"/>
-                            </org.eventb.core.prAnte>
-                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p9"/>
-                            <org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p10">
-                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p1"/>
-                            </org.eventb.core.prAnte>
-                            <org.eventb.core.prAnte name="+" org.eventb.core.prGoal="p11"/>
-                            <org.eventb.core.prAnte name="," org.eventb.core.prGoal="p12">
-                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p2"/>
-                            </org.eventb.core.prAnte>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p6,p10,p13,p1,p8,p12,p3,p9,p7,p5,p11,p2,p4">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
                         </org.eventb.core.prRule>
                     </org.eventb.core.prAnte>
-                </org.eventb.core.prRule>
-            </org.eventb.core.prAnte>
-        </org.eventb.core.prRule>
-        <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
-        <org.eventb.core.prIdent name="exam" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
-        <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
-        <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
-        <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="stdt∈dom(exam)∧exam∈NAMES ⇸ ℤ∧stdt∈dom(resit1)∧resit1∈NAMES ⇸ ℤ∧stdt∈dom(resit2)∧resit2∈NAMES ⇸ ℤ∧finite({exam(stdt)}∪{resit1(stdt)}∪{resit2(stdt)})"/>
-        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="resit2∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="stdt∈dom(resit1)"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="exam∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="resit1∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="stdt∈dom(exam)"/>
-        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="stdt∈dom(exam)∧exam∈NAMES ⇸ ℤ∧stdt∈dom(resit1)∧resit1∈NAMES ⇸ ℤ∧stdt∈dom(resit2)∧resit2∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="stdt∈dom(resit2)"/>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="stdt∈NAMES"/>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="registered∈ℙ(NAMES)">
-            <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
-    </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="markquery/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17" org.eventb.core.prSets="NAMES" org.eventb.core.psManual="true">
-        <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
-            <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p18"/>
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-                    <org.eventb.core.prAnte name="'">
-                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
-                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (exam(stdt)∈MARKS)" org.eventb.core.prHyps="">
-                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
-                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="p10,p8">
-                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p22">
-                                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p22" org.eventb.core.prHyps="">
-                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p23">
-                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p23" org.eventb.core.prHyps=""/>
-                                            </org.eventb.core.prAnte>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                </org.eventb.core.prRule>
-                            </org.eventb.core.prAnte>
-                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="p10,p8">
-                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for exam(stdt)" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="p17">
-                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="p24">
-                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for exam(stdt)" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="p8">
-                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="p25">
-                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="p24"/>
-                                            </org.eventb.core.prAnte>
-                                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
-                                </org.eventb.core.prRule>
-                            </org.eventb.core.prAnte>
-                            <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p24,p10,p8">
-                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (resit1(stdt)∈MARKS)" org.eventb.core.prHyps="">
-                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p26">
-                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p26" org.eventb.core.prHyps="p9,p6">
-                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p22">
-                                                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p22" org.eventb.core.prHyps="">
-                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p23">
-                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p23" org.eventb.core.prHyps=""/>
-                                                    </org.eventb.core.prAnte>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p6,p9">
-                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for resit1(stdt)" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p11">
-                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p27">
-                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for resit1(stdt)" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p9">
-                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p28">
-                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p27"/>
-                                                    </org.eventb.core.prAnte>
-                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                    <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p6,p9,p27">
-                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (resit2(stdt)∈MARKS)" org.eventb.core.prHyps="">
-                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p29">
-                                                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
-                                                    <org.eventb.core.prAnte name="'">
-                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p30"/>
-                                                        <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p29" org.eventb.core.prHyps="">
-                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
-                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p13"/>
-                                                            </org.eventb.core.prAnte>
-                                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p31">
-                                                                <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="p2"/>
-                                                            </org.eventb.core.prAnte>
-                                                        </org.eventb.core.prRule>
-                                                    </org.eventb.core.prAnte>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="p13,p31">
-                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for resit2(stdt)" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="p2">
-                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="p32">
-                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for resit2(stdt)" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="p31">
-                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="p33">
-                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="p32"/>
-                                                            </org.eventb.core.prAnte>
-                                                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
-                                                        </org.eventb.core.prRule>
-                                                    </org.eventb.core.prAnte>
-                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                            <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p13,p31,p32">
-                                                <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p14,p17,p1,p11,p15,p2,p12,p7,p4,p3,p10,p8,p6,p9,p13,p31,p16,p24,p27,p32">
-                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                            <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p32"/>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                    <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p27"/>
-                                </org.eventb.core.prRule>
-                            </org.eventb.core.prAnte>
-                            <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p24"/>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p17">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p6,p10,p13,p1,p8,p12,p3,p9,p7,p5,p11,p2,p4">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p18">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p6,p10,p13,p1,p8,p12,p3,p9,p7,p5,p11,p2,p4">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
                         </org.eventb.core.prRule>
                     </org.eventb.core.prAnte>
                 </org.eventb.core.prRule>
@@ -799,75 +665,89 @@
         <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
         <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
         <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
         <org.eventb.core.prIdent name="top_mark" org.eventb.core.type="ℤ"/>
-        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="⊤∧⊤"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="top_mark∈MARKS"/>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
-        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="exam(stdt)∈ℤ"/>
-        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="resit1(stdt)∈ℤ"/>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="num_sittings∈ℕ"/>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="resit1∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="stdt∈dom(exam)"/>
-        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
-        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="stdt∈dom(resit2)"/>
-        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="pass_mark∈MARKS"/>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="max({exam(stdt)}∪{resit1(stdt)}∪{resit2(stdt)})∈MARKS"/>
-        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="{exam(stdt)}∪{resit1(stdt)}≠(∅ ⦂ ℙ(ℤ))"/>
-        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="resit2(stdt)∈ℤ"/>
-        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="resit2(stdt)∈MARKS"/>
-        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
         <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(exam)⊆registered"/>
-        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="resit2∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="⊤"/>
-        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="stdt∈dom(resit1)∧resit1∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="resit1(stdt)∈MARKS"/>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="stdt∈registered"/>
-        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="{exam(stdt)}∪{resit1(stdt)}∪{resit2(stdt)}≠(∅ ⦂ ℙ(ℤ))"/>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="stdt∈dom(resit1)"/>
-        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="stdt∈dom(resit2)∧resit2∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="exam(stdt)∈MARKS"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="exam∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="stdt∈dom(exam)∧exam∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
-        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{exam(stdt)}∪{resit1(stdt)}∪{resit2(stdt)}⇒b≥x"/>
-        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="stdt∈NAMES"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r9" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-        <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.cut"/>
-        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
-        <org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
-        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.funImgGoal"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="dom(results)=dom(exam)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="stdt∈registered"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="top_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="finite(exam[{stdt}])"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="num_sittings∈ℕ"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="finite(resit1[{stdt}])"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="finite(resit2[{stdt}])"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="finite(exam[{stdt}])∧finite(resit1[{stdt}])∧finite(resit2[{stdt}])"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="pass_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="results∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="stdt∈NAMES"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="markquery/act1/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="NAMES">
+    <org.eventb.core.prProof name="markquery/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="NAMES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+        <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="max(results[{stdt}])∈MARKS"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="markquery/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="NAMES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="results[{stdt}]≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈results[{stdt}]⇒b≥x)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="stdt∈dom(results)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈results[{stdt}]⇒b≥x"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="results[{stdt}]≠(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="NAMES">
         <org.eventb.core.lang name="L"/>
         <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES×ℤ))∈(∅ ⦂ ℙ(NAMES)) ↔ MARKS"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="register/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="NAMES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
                 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
                     <org.eventb.core.prAnte name="'">
-                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
-                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
-                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7"/>
-                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
-                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p3"/>
-                            </org.eventb.core.prAnte>
-                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p9"/>
-                            <org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p10">
-                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p1"/>
-                            </org.eventb.core.prAnte>
-                            <org.eventb.core.prAnte name="+" org.eventb.core.prGoal="p11"/>
-                            <org.eventb.core.prAnte name="," org.eventb.core.prGoal="p12">
-                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p2"/>
-                            </org.eventb.core.prAnte>
-                            <org.eventb.core.prAnte name="-" org.eventb.core.prGoal="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p8,p11,p1,p2,p10,p4,p5,p12,p6,p9,p13">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
                         </org.eventb.core.prRule>
                     </org.eventb.core.prAnte>
                 </org.eventb.core.prRule>
@@ -875,28 +755,433 @@
         </org.eventb.core.prRule>
         <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
         <org.eventb.core.prIdent name="exam" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="num_sittings" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pass_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
         <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
         <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
-        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="resit2∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="stdt∈dom(exam)∧exam∈NAMES ⇸ ℤ∧stdt∈dom(resit1)∧resit1∈NAMES ⇸ ℤ∧stdt∈dom(resit2)∧resit2∈NAMES ⇸ ℤ∧(∃b⦂ℤ·∀x⦂ℤ·x∈{exam(stdt)}∪{resit1(stdt)}∪{resit2(stdt)}⇒b≥x)"/>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="stdt∈dom(resit1)"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="exam∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="resit1∈NAMES ⇸ ℤ"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="stdt∈dom(exam)"/>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="stdt∈dom(exam)∧exam∈NAMES ⇸ ℤ∧stdt∈dom(resit1)∧resit1∈NAMES ⇸ ℤ∧stdt∈dom(resit2)∧resit2∈NAMES ⇸ ℤ∧{exam(stdt)}∪{resit1(stdt)}∪{resit2(stdt)}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈{exam(stdt)}∪{resit1(stdt)}∪{resit2(stdt)}⇒b≥x)"/>
-        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="stdt∈dom(resit2)"/>
-        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈{exam(stdt)}∪{resit1(stdt)}∪{resit2(stdt)}⇒b≥x"/>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="stdt∈NAMES"/>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="registered∈ℙ(NAMES)">
-            <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prIdent name="top_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(exam)⊆registered"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="stdt∉registered"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="top_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="num_sittings∈ℕ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="pass_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="results∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬stdt∈registered"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="stdt∈NAMES"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="results∈registered∪{stdt} ↔ MARKS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="resit2_mark/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20" org.eventb.core.prSets="NAMES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p22"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p23"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p16,p20,p1,p12,p19,p2,p14,p8,p5,p17,p3,p15,p13,p7,p10,p9,p4,p11,p21">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="exam" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="num_sittings" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pass_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prIdent name="top_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(exam)⊆registered"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="stdt∈registered"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="resit1(stdt)&lt;pass_mark"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="top_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="stdt∈dom(resit1)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="num_sittings∈ℕ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="exam∈NAMES ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="exam(stdt)&lt;pass_mark"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="resit1∈NAMES ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="stdt∈dom(exam)"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬stdt∈dom(resit2)"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="results∪{stdt ↦ mark}∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="mark∈MARKS"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="pass_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="results∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="stdt∉dom(resit2)"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="stdt∈NAMES"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="resit1_mark/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17" org.eventb.core.prSets="NAMES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p14,p17,p1,p10,p16,p2,p12,p7,p4,p15,p3,p11,p13,p9,p8,p18">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="exam" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="num_sittings" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pass_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prIdent name="top_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(exam)⊆registered"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="stdt∈registered"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="top_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="stdt∉dom(resit1)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="num_sittings∈ℕ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="exam∈NAMES ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="exam(stdt)&lt;pass_mark"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="stdt∈dom(exam)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬stdt∈dom(resit1)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="results∪{stdt ↦ mark}∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="mark∈MARKS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="pass_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="results∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="stdt∈NAMES"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="exam_mark/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="NAMES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p17"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p11,p14,p1,p8,p13,p2,p9,p6,p4,p12,p3,p10,p15">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="exam" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="num_sittings" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pass_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prIdent name="top_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(exam)⊆registered"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="stdt∈registered"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="top_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬stdt∈dom(exam)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="num_sittings∈ℕ"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="stdt∉dom(exam)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="results∪{stdt ↦ mark}∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="mark∈MARKS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="pass_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="results∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="stdt∈NAMES"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="NAMES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(∅ ⦂ ℙ(NAMES×ℤ))=dom(∅ ⦂ ℙ(NAMES×ℤ))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="exam_mark/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15" org.eventb.core.prSets="NAMES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p17"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p18"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p12,p15,p1,p9,p14,p3,p10,p7,p5,p13,p2,p4,p11,p16">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="exam" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="num_sittings" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pass_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prIdent name="top_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(exam)⊆registered"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="dom(results)=dom(exam)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="stdt∈registered"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="top_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬stdt∈dom(exam)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="num_sittings∈ℕ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="stdt∉dom(exam)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="mark∈MARKS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="pass_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="results∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(results∪{stdt ↦ mark})=dom(exam∪{stdt ↦ mark})"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="stdt∈NAMES"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="resit1_mark/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18" org.eventb.core.prSets="NAMES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p20"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p21"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p15,p18,p1,p11,p17,p3,p13,p8,p5,p16,p2,p4,p12,p14,p10,p9,p19">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="exam" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="num_sittings" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pass_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prIdent name="top_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(exam)⊆registered"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="dom(results)=dom(exam)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="stdt∈registered"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="top_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="stdt∉dom(resit1)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="num_sittings∈ℕ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="exam∈NAMES ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="exam(stdt)&lt;pass_mark"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="stdt∈dom(exam)"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬stdt∈dom(resit1)"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="mark∈MARKS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="pass_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="results∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="stdt∈NAMES"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(results∪{stdt ↦ mark})=dom(exam)"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="resit2_mark/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21" org.eventb.core.prSets="NAMES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p23"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p24"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p17,p21,p1,p13,p20,p3,p15,p9,p6,p18,p2,p4,p16,p14,p8,p11,p10,p5,p12,p22">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="exam" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="num_sittings" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pass_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prIdent name="top_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="top_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="num_sittings∈ℕ"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="resit1∈NAMES ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="stdt∈dom(exam)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="pass_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="results∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="stdt∉dom(resit2)"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(results∪{stdt ↦ mark})=dom(exam)"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(exam)⊆registered"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="dom(results)=dom(exam)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="stdt∈registered"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="resit1(stdt)&lt;pass_mark"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="stdt∈dom(resit1)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="exam∈NAMES ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="exam(stdt)&lt;pass_mark"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬stdt∈dom(resit2)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="mark∈MARKS"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="stdt∈NAMES"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="markquery/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="NAMES" org.eventb.core.psManual="true">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p7">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p18"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p19"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (finite(results[{stdt}]))" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p20">
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p20" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p21">
+                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="p6,p11,p14,p1,p9,p13,p3,p10,p8,p5,p12,p2,p4,p7">
+                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p21">
+                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Existence of minimum or maximum in goal with finite hypothesis" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p21"/>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p21"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="MARKS" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="exam" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="num_sittings" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="pass_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.prIdent name="resit1" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="resit2" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="results" org.eventb.core.type="ℙ(NAMES×ℤ)"/>
+        <org.eventb.core.prIdent name="stdt" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prIdent name="top_mark" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(exam)⊆registered"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="dom(results)=dom(exam)"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="resit2∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="stdt∈registered"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="top_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="MARKS=0 ‥ 100"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="stdt∈dom(results)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="num_sittings∈ℕ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="results[{stdt}]≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈results[{stdt}]⇒b≥x)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="resit1∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="dom(resit2)⊆dom(resit1)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤∧(∃b⦂ℤ·∀x⦂ℤ·x∈results[{stdt}]⇒b≥x)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="pass_mark∈MARKS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="results∈registered ↔ MARKS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="dom(resit1)⊆dom(exam)"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="exam∈NAMES ⇸ MARKS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈results[{stdt}]⇒b≥x"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="stdt∈NAMES"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="stdt∈dom(results)∧(∃b⦂ℤ·∀x⦂ℤ·x∈results[{stdt}]⇒b≥x)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="registered∈ℙ(NAMES)"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="finite(results[{stdt}])"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.finiteHypBoundedGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.cut"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
     </org.eventb.core.prProof>
 </org.eventb.core.prFile>
