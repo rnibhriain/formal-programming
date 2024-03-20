@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scCarrierSet name="HOUSE" org.eventb.core.source="/Papers/Papers_ctx.buc|org.eventb.core.contextFile#Papers_ctx|org.eventb.core.carrierSet#internal_set1" org.eventb.core.type="ℙ(HOUSE)"/>
+</org.eventb.core.scContextFile>

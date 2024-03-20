@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.prFile>
+<org.eventb.core.prProof name="paperquery/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.psManual="true">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.doCase" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="dc (p∈papers)" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prHyps="p3">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.exI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∃ goal (inst TRUE)" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prGoal="p4">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="p3"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prExprRef name=".exprs" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="2" org.eventb.core.prHyps="p5">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.exI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∃ goal (inst FALSE)" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prGoal="p6">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p5">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prExprRef name=".exprs" org.eventb.core.prRef="e1"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="p" org.eventb.core.type="HOUSE"/>
+<org.eventb.core.prIdent name="papers" org.eventb.core.type="ℙ(HOUSE)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="(p∈papers⇒FALSE=TRUE)∧(¬p∈papers⇒FALSE=FALSE)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="(p∈papers⇒TRUE=TRUE)∧(¬p∈papers⇒TRUE=FALSE)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬p∈papers"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃answer'⦂BOOL·(p∈papers⇒answer'=TRUE)∧(¬p∈papers⇒answer'=FALSE)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="p∈papers"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∃answer'⦂BOOL·(p∈papers⇒answer'=TRUE)∧(p∉papers⇒answer'=FALSE)"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="TRUE"/>
+<org.eventb.core.prExpr name="e1" org.eventb.core.expression="FALSE"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

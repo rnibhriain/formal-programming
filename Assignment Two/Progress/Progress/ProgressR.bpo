@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="NAMES" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
+<org.eventb.core.poIdentifier name="managing" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="selling" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="training" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="STATUS={training,selling,managing}" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="¬training=selling" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm2"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="¬training=managing" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm3"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="¬selling=managing" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm4"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="level" org.eventb.core.type="ℙ(NAMES×STATUS)"/>
+<org.eventb.core.poIdentifier name="manager" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="sales" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="trainee" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="trainee⊆NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="sales⊆NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.invariant#internal_inv2"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="manager⊆NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.invariant#internal_inv3"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES×STATUS))∈NAMES ⇸ STATUS" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC2" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="dom((∅ ⦂ ℙ(NAMES×STATUS)))=(∅ ⦂ ℙ(NAMES))∪(∅ ⦂ ℙ(NAMES))∪(∅ ⦂ ℙ(NAMES))" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv2"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC2" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv2"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES))=(∅ ⦂ ℙ(NAMES×STATUS))∼[{training}]" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC2" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES))=(∅ ⦂ ℙ(NAMES×STATUS))∼[{selling}]" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv4"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC2" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv4"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES))=(∅ ⦂ ℙ(NAMES×STATUS))∼[{managing}]" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv5"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC2" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv5"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT0" org.eventb.core.parentSet="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="sales'" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="level'" org.eventb.core.type="ℙ(NAMES×STATUS)"/>
+<org.eventb.core.poIdentifier name="manager'" org.eventb.core.type="ℙ(NAMES)"/>
+<org.eventb.core.poIdentifier name="trainee'" org.eventb.core.type="ℙ(NAMES)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT0" org.eventb.core.parentSet="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#EVTIDENTEVT0" org.eventb.core.poStamp="3"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Progress/ProgressR.bpo|org.eventb.core.poFile#ProgressR|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="level∈NAMES ⇸ STATUS" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="dom(level)=trainee∪sales∪manager" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv2"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="trainee=level∼[{training}]" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="sales=level∼[{selling}]" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv4"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="manager=level∼[{managing}]" org.eventb.core.source="/Progress/ProgressR.bum|org.eventb.core.machineFile#ProgressR|org.eventb.core.invariant#internal_inv5"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

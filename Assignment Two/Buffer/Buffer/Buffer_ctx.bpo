@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="ELEMENT" org.eventb.core.type="ℙ(ELEMENT)"/>
+<org.eventb.core.poIdentifier name="maxsize" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Buffer/Buffer_ctx.bpo|org.eventb.core.poFile#Buffer_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="maxsize∈ℕ1" org.eventb.core.source="/Buffer/Buffer_ctx.buc|org.eventb.core.contextFile#Buffer_ctx|org.eventb.core.axiom#internal_axm1"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

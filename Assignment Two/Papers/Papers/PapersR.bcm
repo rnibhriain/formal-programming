@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scRefinesMachine name="REF" org.eventb.core.scTarget="/Papers/Papers.bcm" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.refinesMachine#internal_1"/>
+<org.eventb.core.scSeesContext name="SEES0" org.eventb.core.scTarget="/Papers/PapersR_ctx.bcc" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.seesContext#internal_1"/>
+<org.eventb.core.scInternalContext name="Papers_ctx">
+<org.eventb.core.scCarrierSet name="HOUSE" org.eventb.core.source="/Papers/Papers_ctx.buc|org.eventb.core.contextFile#Papers_ctx|org.eventb.core.carrierSet#internal_set1" org.eventb.core.type="ℙ(HOUSE)"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInternalContext name="PapersR_ctx">
+<org.eventb.core.scExtendsContext name="EXTENDS0" org.eventb.core.scTarget="/Papers/Papers_ctx.bcc|org.eventb.core.scContextFile#Papers_ctx" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.extendsContext#internal_1"/>
+<org.eventb.core.scAxiom name="AXM0" org.eventb.core.label="axm1" org.eventb.core.predicate="STATUS={present,absent}" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm1"/>
+<org.eventb.core.scAxiom name="AXM1" org.eventb.core.label="axm2" org.eventb.core.predicate="¬present=absent" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm2"/>
+<org.eventb.core.scCarrierSet name="STATUS" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.carrierSet#internal_set1" org.eventb.core.type="ℙ(STATUS)"/>
+<org.eventb.core.scConstant name="absent" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.constant#internal_cst2" org.eventb.core.type="STATUS"/>
+<org.eventb.core.scConstant name="present" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.constant#internal_cst1" org.eventb.core.type="STATUS"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInvariant name="INV0" org.eventb.core.label="inv1" org.eventb.core.predicate="papers⊆HOUSE" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.scInvariant name="INV1" org.eventb.core.label="inv2" org.eventb.core.predicate="answer∈BOOL" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.invariant#internal_inv2"/>
+<org.eventb.core.scInvariant name="INV2" org.eventb.core.label="inv1" org.eventb.core.predicate="papersarr∈HOUSE ⇸ STATUS" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.scInvariant name="INV3" org.eventb.core.label="inv2" org.eventb.core.predicate="num∈ℕ" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv2"/>
+<org.eventb.core.scInvariant name="INV4" org.eventb.core.label="inv3" org.eventb.core.predicate="papers=papersarr∼[{present}]" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.scInvariant name="INV5" org.eventb.core.label="inv4" org.eventb.core.predicate="num=card(papers)" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4"/>
+<org.eventb.core.scVariable name="answer" org.eventb.core.abstract="true" org.eventb.core.concrete="false" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.variable#internal_var2" org.eventb.core.type="BOOL"/>
+<org.eventb.core.scVariable name="num" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.variable#internal_var2" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scVariable name="papers" org.eventb.core.abstract="true" org.eventb.core.concrete="false" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.variable#internal_var1" org.eventb.core.type="ℙ(HOUSE)"/>
+<org.eventb.core.scVariable name="papersarr" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.variable#internal_var1" org.eventb.core.type="ℙ(HOUSE×STATUS)"/>
+<org.eventb.core.scEvent name="EVT0" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_evt11">
+<org.eventb.core.scRefinesEvent name="REF0" org.eventb.core.scTarget="/Papers/Papers.bcm|org.eventb.core.scMachineFile#Papers|org.eventb.core.scEvent#EVT0" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.scAction name="ACT0" org.eventb.core.assignment="papersarr ≔ (∅ ⦂ ℙ(HOUSE×STATUS))" org.eventb.core.label="act1" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_evt11|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.scAction name="ACT1" org.eventb.core.assignment="num ≔ 0" org.eventb.core.label="act2" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_evt11|org.eventb.core.action#internal_act2"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>

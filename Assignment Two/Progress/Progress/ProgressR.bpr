@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.prFile>
+<org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="NAMES,STATUS">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p2,p3">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="managing" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="selling" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="training" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="STATUS={training,selling,managing}"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬training=managing"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬selling=managing"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬training=selling"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES×STATUS))∈NAMES ⇸ STATUS"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="STATUS">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p2,p3">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="managing" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="selling" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="training" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="STATUS={training,selling,managing}"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬training=managing"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬selling=managing"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom((∅ ⦂ ℙ(NAMES×STATUS)))=(∅ ⦂ ℙ(NAMES))∪(∅ ⦂ ℙ(NAMES))∪(∅ ⦂ ℙ(NAMES))"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬training=selling"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="STATUS">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p2,p3">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="managing" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="selling" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="training" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="STATUS={training,selling,managing}"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬training=managing"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬selling=managing"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬training=selling"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES))=(∅ ⦂ ℙ(NAMES×STATUS))∼[{training}]"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="STATUS">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p2,p3">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="managing" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="selling" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="training" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="STATUS={training,selling,managing}"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES))=(∅ ⦂ ℙ(NAMES×STATUS))∼[{selling}]"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬training=managing"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬selling=managing"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬training=selling"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="STATUS">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p2,p3">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="managing" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="selling" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="training" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="STATUS={training,selling,managing}"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMES))=(∅ ⦂ ℙ(NAMES×STATUS))∼[{managing}]"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬training=managing"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬selling=managing"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬training=selling"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

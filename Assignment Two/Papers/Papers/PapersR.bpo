@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="HOUSE" org.eventb.core.type="ℙ(HOUSE)"/>
+<org.eventb.core.poIdentifier name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
+<org.eventb.core.poIdentifier name="absent" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poIdentifier name="present" org.eventb.core.type="STATUS"/>
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="STATUS={present,absent}" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="¬present=absent" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm2"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="answer" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="num" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="papers" org.eventb.core.type="ℙ(HOUSE)"/>
+<org.eventb.core.poIdentifier name="papersarr" org.eventb.core.type="ℙ(HOUSE×STATUS)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="papers⊆HOUSE" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="answer∈BOOL" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.invariant#internal_inv2"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="inv4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#HYPINV4"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="finite(papers)" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#HYPINV4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="(∅ ⦂ ℙ(HOUSE×STATUS))∈HOUSE ⇸ STATUS" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC2" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#HYPINV4|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv2"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC2" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv2"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#HYPINV4|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="(∅ ⦂ ℙ(HOUSE))=(∅ ⦂ ℙ(HOUSE×STATUS))∼[{present}]" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC2" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#HYPINV4|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="0=card((∅ ⦂ ℙ(HOUSE)))" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC2" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT0" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="num'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="answer'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="papersarr'" org.eventb.core.type="ℙ(HOUSE×STATUS)"/>
+<org.eventb.core.poIdentifier name="papers'" org.eventb.core.type="ℙ(HOUSE)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT0" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTIDENTEVT0" org.eventb.core.poStamp="2"/>
+<org.eventb.core.poPredicateSet name="HYPINV4" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="papersarr∈HOUSE ⇸ STATUS" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="num∈ℕ" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv2"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="papers=papersarr∼[{present}]" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv3"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#HYPINV4" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="num=card(papers)" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

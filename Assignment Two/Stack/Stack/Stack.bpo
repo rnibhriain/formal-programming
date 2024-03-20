@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="17">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="ELEMENT" org.eventb.core.type="ℙ(ELEMENT)"/>
+<org.eventb.core.poIdentifier name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="maxsize∈ℕ1" org.eventb.core.source="/Stack/Stack_ctx.buc|org.eventb.core.contextFile#Stack_ctx|org.eventb.core.axiom#internal_axm1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="7">
+<org.eventb.core.poIdentifier name="element" org.eventb.core.type="ELEMENT"/>
+<org.eventb.core.poIdentifier name="query" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="stack" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.poIdentifier name="top" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ELEMENT))⊆ℕ × ELEMENT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="0∈0 ‥ maxsize" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="dom((∅ ⦂ ℙ(ℤ×ELEMENT)))=0 ‥ (0 − 1)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv6"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt11"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv6"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act3/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="ELEMENT≠(∅ ⦂ ℙ(ELEMENT))" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt11|org.eventb.core.action#internal_act3"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt11|org.eventb.core.action#internal_act3"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT0" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="7">
+<org.eventb.core.poIdentifier name="stack'" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.poIdentifier name="top'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="query'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="element'" org.eventb.core.type="ELEMENT"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT0" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTIDENTEVT0" org.eventb.core.poStamp="7"/>
+<org.eventb.core.poSequent name="push/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT1"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="stack∪{top ↦ e}⊆ℕ × ELEMENT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poSequent#push\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="push/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT1"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="top+1∈0 ‥ maxsize" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poSequent#push\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="push/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT1"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="dom(stack∪{top ↦ e})=0 ‥ (top+1 − 1)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv6"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv6"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poSequent#push\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT1" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="13">
+<org.eventb.core.poIdentifier name="stack'" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.poIdentifier name="top'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="e" org.eventb.core.type="ELEMENT"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT1" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTIDENTEVT1" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈ELEMENT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12|org.eventb.core.guard#internal_grd1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="top&lt;maxsize" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12|org.eventb.core.guard#internal_grd2"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="pop/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT2"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="{top − 1} ⩤ stack⊆ℕ × ELEMENT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poSequent#pop\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pop/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT2"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="top − 1∈0 ‥ maxsize" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poSequent#pop\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pop/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT2"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="dom({top − 1} ⩤ stack)=0 ‥ (top − 1 − 1)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv6"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
+<org.eventb.core.poSource name="SRC1" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv6"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poSequent#pop\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="HINT1" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pop/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="17">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT2"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="ran({top − 1} ◁ stack)≠(∅ ⦂ ℙ(ELEMENT))" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT2" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="13">
+<org.eventb.core.poIdentifier name="stack'" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.poIdentifier name="top'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="element'" org.eventb.core.type="ELEMENT"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT2" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTIDENTEVT2" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="top&gt;0" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.guard#internal_grd1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="empty/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="14">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT3"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="∃query'⦂BOOL·(top=0⇒query'=TRUE)∧(top≠0⇒query'=FALSE)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt14|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt14|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT3" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="13">
+<org.eventb.core.poIdentifier name="query'" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT3" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTIDENTEVT3" org.eventb.core.poStamp="13"/>
+<org.eventb.core.poSequent name="full/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="14">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT4"/>
+<org.eventb.core.poPredicate name="GOAL" org.eventb.core.predicate="∃query'⦂BOOL·(top=maxsize⇒query'=TRUE)∧(top≠maxsize⇒query'=FALSE)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt15|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSource name="SRC0" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt15|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSelHint name="HINT0" org.eventb.core.poSelHintFst="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTALLHYPEVT4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTEVT4" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="13">
+<org.eventb.core.poIdentifier name="query'" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPEVT4" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#EVTIDENTEVT4" org.eventb.core.poStamp="13"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Stack/Stack.bpo|org.eventb.core.poFile#Stack|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="stack⊆ℕ × ELEMENT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="top∈0 ‥ maxsize" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv3"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="element∈ELEMENT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv4"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="query∈BOOL" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv5"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="dom(stack)=0 ‥ (top − 1)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv6"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

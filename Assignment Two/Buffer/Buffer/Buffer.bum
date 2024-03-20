@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.event name="internal_evt11" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="buffer ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="front ≔ 0" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="internal_act3" org.eventb.core.assignment="back ≔ 0" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="internal_act4" org.eventb.core.assignment="element :∈ ELEMENT" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="internal_act5" org.eventb.core.assignment="query ≔ FALSE" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="internal_1" org.eventb.core.target="Buffer_ctx"/>
+<org.eventb.core.variable name="internal_var1" org.eventb.core.identifier="buffer"/>
+<org.eventb.core.invariant name="internal_inv1" org.eventb.core.label="inv1" org.eventb.core.predicate="buffer ⊆ ℕ × ELEMENT"/>
+<org.eventb.core.event name="internal_evt12" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="add">
+<org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="e"/>
+<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="e ∈ ELEMENT"/>
+<org.eventb.core.guard name="internal_grd2" org.eventb.core.label="grd2" org.eventb.core.predicate="back−front&lt;maxsize"/>
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="buffer ≔ buffer ∪ {back↦e}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="back ≔ back+1" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="internal_var2" org.eventb.core.identifier="front"/>
+<org.eventb.core.invariant name="internal_inv2" org.eventb.core.label="inv2" org.eventb.core.predicate="front ∈ ℕ"/>
+<org.eventb.core.variable name="internal_var3" org.eventb.core.identifier="back"/>
+<org.eventb.core.invariant name="internal_inv3" org.eventb.core.label="inv3" org.eventb.core.predicate="back ∈ ℕ"/>
+<org.eventb.core.event name="internal_evt13" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="remove">
+<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="back−front &gt; 0"/>
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="element :∈ ran({front} ◁ buffer)" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="buffer ≔ {front} ⩤ buffer" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="internal_act3" org.eventb.core.assignment="front ≔ front + 1" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="internal_var4" org.eventb.core.identifier="element"/>
+<org.eventb.core.invariant name="internal_inv4" org.eventb.core.label="inv4" org.eventb.core.predicate="element ∈ ELEMENT"/>
+<org.eventb.core.variable name="internal_var5" org.eventb.core.identifier="query"/>
+<org.eventb.core.invariant name="internal_inv5" org.eventb.core.label="inv5" org.eventb.core.predicate="query ∈ BOOL"/>
+<org.eventb.core.event name="internal_evt14" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="empty">
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="query :∣ (front=back ⇒ query'=TRUE) ∧ (front≠back ⇒ query'=FALSE)" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="internal_evt15" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="full">
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="query :∣ (back−front=maxsize⇒query'=TRUE) ∧ (back−front≠maxsize⇒query'=FALSE)" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="internal_inv6" org.eventb.core.label="inv6" org.eventb.core.predicate="dom(buffer)=front‥back−1"/>
+<org.eventb.core.invariant name="internal_inv7" org.eventb.core.label="inv7" org.eventb.core.predicate="back≥front"/>
+</org.eventb.core.machineFile>

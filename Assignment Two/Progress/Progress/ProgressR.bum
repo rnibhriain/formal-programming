@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.event name="internal_evt11" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="level ≔ ∅" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="internal_1" org.eventb.core.target="ProgressR_ctx"/>
+<org.eventb.core.variable name="internal_var1" org.eventb.core.identifier="level"/>
+<org.eventb.core.invariant name="internal_inv1" org.eventb.core.label="inv1" org.eventb.core.predicate="level ∈ NAMES ⇸ STATUS"/>
+<org.eventb.core.invariant name="internal_inv2" org.eventb.core.label="inv2" org.eventb.core.predicate="dom(level) = trainee ∪ sales ∪ manager"/>
+<org.eventb.core.invariant name="internal_inv3" org.eventb.core.label="inv3" org.eventb.core.predicate="trainee = level∼[{training}]"/>
+<org.eventb.core.invariant name="internal_inv4" org.eventb.core.label="inv4" org.eventb.core.predicate="sales = level∼[{selling}]"/>
+<org.eventb.core.invariant name="internal_inv5" org.eventb.core.label="inv5" org.eventb.core.predicate="manager = level∼[{managing}]"/>
+<org.eventb.core.refinesMachine name="internal_1" org.eventb.core.target="Progress"/>
+</org.eventb.core.machineFile>

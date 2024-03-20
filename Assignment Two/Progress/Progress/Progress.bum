@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.event name="internal_evt11" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="trainee ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="sales ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="internal_act3" org.eventb.core.assignment="manager ≔ ∅" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="internal_var1" org.eventb.core.identifier="trainee"/>
+<org.eventb.core.invariant name="internal_inv1" org.eventb.core.label="inv1" org.eventb.core.predicate="trainee ⊆ NAMES"/>
+<org.eventb.core.variable name="internal_var2" org.eventb.core.identifier="sales"/>
+<org.eventb.core.invariant name="internal_inv2" org.eventb.core.label="inv2" org.eventb.core.predicate="sales ⊆ NAMES"/>
+<org.eventb.core.variable name="internal_var3" org.eventb.core.identifier="manager"/>
+<org.eventb.core.invariant name="internal_inv3" org.eventb.core.label="inv3" org.eventb.core.predicate="manager ⊆ NAMES"/>
+<org.eventb.core.seesContext name="internal_1" org.eventb.core.target="Progress_ctx"/>
+<org.eventb.core.event name="internal_evt12" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="join">
+<org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="e"/>
+<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="e ∈ NAMES"/>
+<org.eventb.core.guard name="internal_grd2" org.eventb.core.label="grd2" org.eventb.core.predicate="e ∉ trainee ∪ sales ∪ manager"/>
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="trainee ≔ trainee ∪ {e}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="internal_evt13" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="promotetrainee">
+<org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="e"/>
+<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="e ∈ trainee"/>
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="trainee ≔ trainee ∖ {e}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="sales ≔ sales ∪ {e}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="internal_evt14" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="promotesales">
+<org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="e"/>
+<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="e ∈ sales"/>
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="sales ≔ sales ∖ {e}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="manager ≔ manager ∪ {e}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="internal_evt15" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fire">
+<org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="e"/>
+<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="e ∈ trainee ∪ sales ∪ manager"/>
+<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="trainee ≔ trainee ∖ {e}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="sales ≔ sales ∖ {e}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="internal_act3" org.eventb.core.assignment="manager ≔ manager ∖ {e}" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

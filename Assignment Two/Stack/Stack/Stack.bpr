@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.prFile>
+<org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="ELEMENT">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="maxsize∈ℕ1"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ELEMENT))⊆ℕ × ELEMENT"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="inv2/WD"/>
+<org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈0 ‥ maxsize"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="maxsize∈ℕ1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="push/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="ELEMENT">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p1,p3,p2,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="e" org.eventb.core.type="ELEMENT"/>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="stack" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.prIdent name="top" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="stack⊆ℕ × ELEMENT"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="top+1∈0 ‥ maxsize"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="e∈ELEMENT"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="top∈0 ‥ maxsize"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="top&lt;maxsize"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="maxsize∈ℕ1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="push/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="ELEMENT">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p1,p3,p2,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="e" org.eventb.core.type="ELEMENT"/>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="stack" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.prIdent name="top" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="stack⊆ℕ × ELEMENT"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="stack∪{top ↦ e}⊆ℕ × ELEMENT"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="e∈ELEMENT"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="top∈0 ‥ maxsize"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="top&lt;maxsize"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="maxsize∈ℕ1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="pop/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7" org.eventb.core.prSets="ELEMENT" org.eventb.core.psManual="true">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.cut" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah ({top} ⩤ stack⊆stack)" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p8">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p5,p1,p2,p6,p3,p7">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="2" org.eventb.core.prHyps="p9">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.cut" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah ({top − 1} ⩤ stack⊆stack)" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p8">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prGoal="p10">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p7,p2,p3,p6,p1,p4,p5,p9">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="2" org.eventb.core.prHyps="p10">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p2,p3,p6,p1,p4,p5,p9,p10">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p10"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p9"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="element" org.eventb.core.type="ELEMENT"/>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="query" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="stack" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.prIdent name="top" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="query∈BOOL"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="stack⊆ℕ × ELEMENT"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="{top − 1} ⩤ stack⊆ℕ × ELEMENT"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="top∈0 ‥ maxsize"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="{top − 1} ⩤ stack⊆stack"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="dom(stack)=0 ‥ (top − 1)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="top&gt;0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="element∈ELEMENT"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="maxsize∈ℕ1"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="{top} ⩤ stack⊆stack"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/act3/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="ELEMENT">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="ELEMENT≠(∅ ⦂ ℙ(ELEMENT))"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="maxsize∈ℕ1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="pop/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7" org.eventb.core.prSets="ELEMENT" org.eventb.core.psManual="true">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.mngHyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p2,p3,p4"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p8">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.mngHyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p7,p6"/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.cut" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (top − 1∈dom(stack))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prGoal="p10">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p7,p2,p3,p6,p1,p4,p5">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="2" org.eventb.core.prHyps="p10">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalPP" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p5,p2,p3,p4,p7,p6,p10">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R30000"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p10"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="element" org.eventb.core.type="ELEMENT"/>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="query" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="stack" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.prIdent name="top" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="query∈BOOL"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="stack⊆ℕ × ELEMENT"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬ran({top − 1} ◁ stack)=(∅ ⦂ ℙ(ELEMENT))"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="top∈0 ‥ maxsize"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="top − 1∈dom(stack)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="ran({top − 1} ◁ stack)≠(∅ ⦂ ℙ(ELEMENT))"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="dom(stack)=0 ‥ (top − 1)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="top&gt;0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="element∈ELEMENT"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="maxsize∈ℕ1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="full/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.psManual="true">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.doCase" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="dc (top=maxsize)" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prHyps="p3">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh (top=maxsize)" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p4">
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps=""/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p5">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.exI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∃ goal (inst TRUE)" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prGoal="p6">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prExprRef name=".exprs" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="2" org.eventb.core.prHyps="p7">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.exI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∃ goal (inst FALSE)" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prGoal="p8">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p7">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p7"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prExprRef name=".exprs" org.eventb.core.prRef="e1"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="top" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃query'⦂BOOL·(top=maxsize⇒query'=TRUE)∧(¬top=maxsize⇒query'=FALSE)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="TRUE=TRUE"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="(top=maxsize⇒FALSE=TRUE)∧(¬top=maxsize⇒FALSE=FALSE)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬top=maxsize"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∃query'⦂BOOL·(maxsize=maxsize⇒query'=TRUE)∧(¬maxsize=maxsize⇒query'=FALSE)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="top=maxsize"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∃query'⦂BOOL·query'=TRUE"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∃query'⦂BOOL·(top=maxsize⇒query'=TRUE)∧(top≠maxsize⇒query'=FALSE)"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="TRUE"/>
+<org.eventb.core.prExpr name="e1" org.eventb.core.expression="FALSE"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="empty/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.psManual="true">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.doCase" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="dc (top=0)" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prHyps="p3">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh (top=0)" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p4">
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps=""/>
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p5">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.exI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∃ goal (inst TRUE)" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prGoal="p6">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prExprRef name=".exprs" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="2" org.eventb.core.prHyps="p7">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.exI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∃ goal (inst FALSE)" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.trueGoal" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="1" org.eventb.core.prGoal="p8">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p7">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.hyp" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p7"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prExprRef name=".exprs" org.eventb.core.prRef="e1"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="top" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="TRUE=TRUE"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="top=0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃query'⦂BOOL·(top=0⇒query'=TRUE)∧(¬top=0⇒query'=FALSE)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∃query'⦂BOOL·(0=0⇒query'=TRUE)∧(¬0=0⇒query'=FALSE)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="(top=0⇒FALSE=TRUE)∧(¬top=0⇒FALSE=FALSE)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∃query'⦂BOOL·(top=0⇒query'=TRUE)∧(top≠0⇒query'=FALSE)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬top=0"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∃query'⦂BOOL·query'=TRUE"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="TRUE"/>
+<org.eventb.core.prExpr name="e1" org.eventb.core.expression="FALSE"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="pop/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="ELEMENT">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p2,p3,p5,p1,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="element" org.eventb.core.type="ELEMENT"/>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="query" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="stack" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.prIdent name="top" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="query∈BOOL"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="stack⊆ℕ × ELEMENT"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="top∈0 ‥ maxsize"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="top − 1∈0 ‥ maxsize"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="top&gt;0"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="element∈ELEMENT"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="maxsize∈ℕ1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom((∅ ⦂ ℙ(ℤ×ELEMENT)))=0 ‥ (0 − 1)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="maxsize∈ℕ1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="push/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8" org.eventb.core.prSets="ELEMENT">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p2,p4,p7,p1,p5,p3,p6">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="e" org.eventb.core.type="ELEMENT"/>
+<org.eventb.core.prIdent name="element" org.eventb.core.type="ELEMENT"/>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="query" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="stack" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.prIdent name="top" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="query∈BOOL"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="stack⊆ℕ × ELEMENT"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="e∈ELEMENT"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="top∈0 ‥ maxsize"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="dom(stack)=0 ‥ (top − 1)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(stack∪{top ↦ e})=0 ‥ (top+1 − 1)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="element∈ELEMENT"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="top&lt;maxsize"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="maxsize∈ℕ1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="pop/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7" org.eventb.core.prSets="ELEMENT">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p2,p3,p6,p1,p4,p5">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="element" org.eventb.core.type="ELEMENT"/>
+<org.eventb.core.prIdent name="maxsize" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="query" org.eventb.core.type="BOOL"/>
+<org.eventb.core.prIdent name="stack" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+<org.eventb.core.prIdent name="top" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="query∈BOOL"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="stack⊆ℕ × ELEMENT"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom({top − 1} ⩤ stack)=0 ‥ (top − 1 − 1)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="top∈0 ‥ maxsize"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="dom(stack)=0 ‥ (top − 1)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="top&gt;0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="element∈ELEMENT"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="maxsize∈ℕ1"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

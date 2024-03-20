@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eventb.core.prFile>
+<org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="inv4/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prRule name="org.eventb.core.seqprover.eq" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh (papers=papersarr∼[{present}])" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p2">
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p1"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="papers" org.eventb.core.type="ℙ(HOUSE)"/>
+<org.eventb.core.prIdent name="papersarr" org.eventb.core.type="ℙ(HOUSE×STATUS)"/>
+<org.eventb.core.prIdent name="present" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="finite(papers)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="papers=papersarr∼[{present}]"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="finite(papersarr∼[{present}])"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="HOUSE,STATUS">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="present" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="STATUS={present,absent}"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(HOUSE×STATUS))∈HOUSE ⇸ STATUS"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬present=absent"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="STATUS">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p3,p2">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="present" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="STATUS={present,absent}"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="finite((∅ ⦂ ℙ(HOUSE)))"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0=card((∅ ⦂ ℙ(HOUSE)))"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬present=absent"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="STATUS">
+<org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prIdent name="present" org.eventb.core.type="STATUS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="STATUS={present,absent}"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(HOUSE))=(∅ ⦂ ℙ(HOUSE×STATUS))∼[{present}]"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬present=absent"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>
