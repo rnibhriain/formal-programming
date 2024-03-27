@@ -1,55 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="2">
-<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
-<org.eventb.core.poIdentifier name="NAMES" org.eventb.core.type="ℙ(NAMES)"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
-<org.eventb.core.poIdentifier name="manager" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="sales" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="trainee" org.eventb.core.type="ℙ(NAMES)"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTEVT0" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poIdentifier name="sales'" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="manager'" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="trainee'" org.eventb.core.type="ℙ(NAMES)"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPEVT0" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#EVTIDENTEVT0" org.eventb.core.poStamp="1"/>
-<org.eventb.core.poPredicateSet name="EVTIDENTEVT1" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poIdentifier name="trainee'" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="e" org.eventb.core.type="NAMES"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPEVT1" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#EVTIDENTEVT1" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt12|org.eventb.core.guard#internal_grd1"/>
-<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="e∉trainee∪sales∪manager" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt12|org.eventb.core.guard#internal_grd2"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTEVT2" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poIdentifier name="sales'" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="trainee'" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="e" org.eventb.core.type="NAMES"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPEVT2" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#EVTIDENTEVT2" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈trainee" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt13|org.eventb.core.guard#internal_grd1"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTEVT3" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poIdentifier name="sales'" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="manager'" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="e" org.eventb.core.type="NAMES"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPEVT3" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#EVTIDENTEVT3" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈sales" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt14|org.eventb.core.guard#internal_grd1"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTEVT4" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poIdentifier name="sales'" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="manager'" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="trainee'" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="e" org.eventb.core.type="NAMES"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPEVT4" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#EVTIDENTEVT4" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈trainee∪sales∪manager" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt15|org.eventb.core.guard#internal_grd1"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="trainee⊆NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.invariant#internal_inv1"/>
-<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sales⊆NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.invariant#internal_inv2"/>
-<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="manager⊆NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.invariant#internal_inv3"/>
-</org.eventb.core.poPredicateSet>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="NAMES" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poIdentifier name="trainee" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="manager" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="sales" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTProgress_ct|" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="manager'" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="sales'" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="trainee'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPProgress_ct|" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#EVTIDENTProgress_ct\|" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTProgress_ct}" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="e" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.poIdentifier name="trainee'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPProgress_ct}" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#EVTIDENTProgress_ct}" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt12|org.eventb.core.guard#internal_grd1"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="e∉trainee∪sales∪manager" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt12|org.eventb.core.guard#internal_grd2"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTProgress_ct~" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="e" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.poIdentifier name="sales'" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="trainee'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPProgress_ct~" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#EVTIDENTProgress_ct~" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈trainee" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt13|org.eventb.core.guard#internal_grd1"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTProgress_cu'" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="manager'" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="e" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.poIdentifier name="sales'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPProgress_cu'" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#EVTIDENTProgress_cu'" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈sales" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt14|org.eventb.core.guard#internal_grd1"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTProgress_cu(" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="manager'" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="e" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.poIdentifier name="sales'" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="trainee'" org.eventb.core.type="ℙ(NAMES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPProgress_cu(" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#EVTIDENTProgress_cu(" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="e∈trainee∪sales∪manager" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.event#internal_evt15|org.eventb.core.guard#internal_grd1"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Progress/Progress.bpo|org.eventb.core.poFile#Progress|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="trainee⊆NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.invariant#internal_inv1I"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sales⊆NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.invariant#internal_inv2I"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="manager⊆NAMES" org.eventb.core.source="/Progress/Progress.bum|org.eventb.core.machineFile#Progress|org.eventb.core.invariant#internal_inv3I"/>
+    </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

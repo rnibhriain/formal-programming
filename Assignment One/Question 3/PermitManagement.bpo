@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="64">
-    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="9">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="VEHICLES" org.eventb.core.type="ℙ(VEHICLES)"/>
         <org.eventb.core.poIdentifier name="PEOPLE" org.eventb.core.type="ℙ(PEOPLE)"/>
         <org.eventb.core.poIdentifier name="RESPONSE" org.eventb.core.type="ℙ(RESPONSE)"/>
@@ -8,25 +8,25 @@
         <org.eventb.core.poIdentifier name="no" org.eventb.core.type="RESPONSE"/>
         <org.eventb.core.poPredicate name="VEHICLET" org.eventb.core.predicate="RESPONSE={yes,no}" org.eventb.core.source="/Question 3/PermitManagement_ctx.buc|org.eventb.core.contextFile#PermitManagement_ctx|org.eventb.core.axiom#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="53">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="permits" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
         <org.eventb.core.poIdentifier name="vehicle_out" org.eventb.core.type="VEHICLES"/>
         <org.eventb.core.poIdentifier name="person_out" org.eventb.core.type="PEOPLE"/>
         <org.eventb.core.poIdentifier name="response" org.eventb.core.type="RESPONSE"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="inv5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="inv5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct\|"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀person⦂PEOPLE·person∈dom(permits)⇒finite(permits[{person}])" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#="/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#="/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct\|"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="inv6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="inv6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct}"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀vehicle⦂VEHICLES·vehicle∈ran(permits)⇒finite(permits ▷ {vehicle})" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#&gt;"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#&gt;"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct}"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu'"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(PEOPLE×VEHICLES))∈PEOPLE ⤔ VEHICLES" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#7"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#'"/>
@@ -34,7 +34,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct\||org.eventb.core.poPredicate#PRD1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu'"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀person⦂PEOPLE·person∈dom(∅ ⦂ ℙ(PEOPLE×VEHICLES))⇒card((∅ ⦂ ℙ(PEOPLE×VEHICLES))[{person}])=1" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#="/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#'"/>
@@ -42,7 +42,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct}|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu'"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀vehicle⦂VEHICLES·vehicle∈ran(∅ ⦂ ℙ(PEOPLE×VEHICLES))⇒card((∅ ⦂ ℙ(PEOPLE×VEHICLES)) ▷ {vehicle})=1" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#&gt;"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#'"/>
@@ -50,32 +50,32 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="INITIALISATION/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu'"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="RESPONSE≠(∅ ⦂ ℙ(RESPONSE))" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#'|org.eventb.core.action#'"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#'|org.eventb.core.action#'"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu'"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/act2/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="INITIALISATION/act2/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu'"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="VEHICLES≠(∅ ⦂ ℙ(VEHICLES))" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#'|org.eventb.core.action#("/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#'|org.eventb.core.action#("/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu'"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/act4/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="INITIALISATION/act4/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu'"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="PEOPLE≠(∅ ⦂ ℙ(PEOPLE))" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#'|org.eventb.core.action#*"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#'|org.eventb.core.action#*"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu'"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu'" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu'" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="response'" org.eventb.core.type="RESPONSE"/>
         <org.eventb.core.poIdentifier name="person_out'" org.eventb.core.type="PEOPLE"/>
         <org.eventb.core.poIdentifier name="permits'" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
         <org.eventb.core.poIdentifier name="vehicle_out'" org.eventb.core.type="VEHICLES"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu'" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu'" org.eventb.core.poStamp="64"/>
-    <org.eventb.core.poSequent name="register/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu'" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu'" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="register/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu("/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permits∪{person ↦ vehicle}∈PEOPLE ⤔ VEHICLES" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#7"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#+"/>
@@ -83,7 +83,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#register\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct\||org.eventb.core.poPredicate#PRD1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="register/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="register/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu("/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀person0⦂PEOPLE·person0∈dom(permits∪{person ↦ vehicle})⇒card((permits∪{person ↦ vehicle})[{person0}])=1" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#="/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#+"/>
@@ -91,7 +91,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#register\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct}|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="register/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="register/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu("/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀vehicle0⦂VEHICLES·vehicle0∈ran(permits∪{person ↦ vehicle})⇒card((permits∪{person ↦ vehicle}) ▷ {vehicle0})=1" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#&gt;"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#+"/>
@@ -99,18 +99,18 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#register\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu(" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu(" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="permits'" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
         <org.eventb.core.poIdentifier name="vehicle" org.eventb.core.type="VEHICLES"/>
         <org.eventb.core.poIdentifier name="person" org.eventb.core.type="PEOPLE"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu(" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu(" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu(" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu(" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="vehicle∉ran(permits)" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#+|org.eventb.core.guard#)"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="person∉dom(permits)" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#+|org.eventb.core.guard#*"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="vehicle∈VEHICLES" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#+|org.eventb.core.guard#,"/>
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="person∈PEOPLE" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#+|org.eventb.core.guard#-"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="deregister/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="deregister/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu)"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{person} ⩤ permits∈PEOPLE ⤔ VEHICLES" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#7"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#,"/>
@@ -118,7 +118,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#deregister\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct\||org.eventb.core.poPredicate#PRD1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="deregister/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="deregister/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu)"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀person0⦂PEOPLE·person0∈dom({person} ⩤ permits)⇒card(({person} ⩤ permits)[{person0}])=1" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#="/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#,"/>
@@ -126,7 +126,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#deregister\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct}|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="deregister/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="deregister/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu)"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀vehicle⦂VEHICLES·vehicle∈ran({person} ⩤ permits)⇒card({person} ⩤ permits ▷ {vehicle})=1" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#&gt;"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#,"/>
@@ -134,62 +134,62 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#deregister\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu)" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu)" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="permits'" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
         <org.eventb.core.poIdentifier name="person" org.eventb.core.type="PEOPLE"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu)" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu)" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu)" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu)" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="person∈PEOPLE" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#,|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="person∈dom(permits)" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#,|org.eventb.core.guard#)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="registered/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="registered/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu*"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃response'⦂RESPONSE·(person∈dom(permits)⇒response'=yes)∧(person∉dom(permits)⇒response'=no)" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#*|org.eventb.core.action#)"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#*|org.eventb.core.action#)"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu*"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu*" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu*" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="response'" org.eventb.core.type="RESPONSE"/>
         <org.eventb.core.poIdentifier name="person" org.eventb.core.type="PEOPLE"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu*" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu*" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu*" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu*" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="person∈PEOPLE" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#*|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="vehicle/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="vehicle/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu+"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="person∈dom(permits)∧permits∈PEOPLE ⇸ VEHICLES" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#-|org.eventb.core.action#*"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#-|org.eventb.core.action#*"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu+"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu+" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu+" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="vehicle_out'" org.eventb.core.type="VEHICLES"/>
         <org.eventb.core.poIdentifier name="person" org.eventb.core.type="PEOPLE"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu+" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu+" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu+" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu+" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="person∈PEOPLE" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#-|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="person∈dom(permits)" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#-|org.eventb.core.guard#)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="owner/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="owner/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu,"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="vehicle∈dom(permits∼)∧permits∼∈VEHICLES ⇸ PEOPLE" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#.|org.eventb.core.action#*"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#.|org.eventb.core.action#*"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu,"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu," org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu," org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="person_out'" org.eventb.core.type="PEOPLE"/>
         <org.eventb.core.poIdentifier name="vehicle" org.eventb.core.type="VEHICLES"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu," org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu," org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu," org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTIDENTPermitManagement_cu," org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="vehicle∈VEHICLES" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#.|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="vehicle∈ran(permits)" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#.|org.eventb.core.guard#)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="change_register/grd5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="change_register/grd5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTHYPPermitManagement_cu-*"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="person∈dom(permits)∧permits∈PEOPLE ⇸ VEHICLES" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#\/|org.eventb.core.guard#-"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#\/|org.eventb.core.guard#-"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTHYPPermitManagement_cu-*"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="change_register/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="change_register/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu-"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permits{person ↦ vehicle}∈PEOPLE ⤔ VEHICLES" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#7"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#\/"/>
@@ -197,7 +197,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#change_register\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct\||org.eventb.core.poPredicate#PRD1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="change_register/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="change_register/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu-"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀person0⦂PEOPLE·person0∈dom(permits{person ↦ vehicle})⇒card((permits{person ↦ vehicle})[{person0}])=1" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#="/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#\/"/>
@@ -205,7 +205,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#change_register\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct}|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="change_register/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="change_register/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu-"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀vehicle0⦂VEHICLES·vehicle0∈ran(permits{person ↦ vehicle})⇒card((permits{person ↦ vehicle}) ▷ {vehicle0})=1" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#&gt;"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#\/"/>
@@ -213,7 +213,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poSequent#change_register\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu-" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTIDENTPermitManagement_cu-" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="permits'" org.eventb.core.type="ℙ(PEOPLE×VEHICLES)"/>
         <org.eventb.core.poIdentifier name="vehicle" org.eventb.core.type="VEHICLES"/>
         <org.eventb.core.poIdentifier name="person" org.eventb.core.type="PEOPLE"/>
@@ -224,10 +224,10 @@
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="person∈dom(permits)" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#\/|org.eventb.core.guard#)"/>
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="vehicle∉ran(permits)" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#\/|org.eventb.core.guard#*"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu-" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTHYPPermitManagement_cu-*" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPermitManagement_cu-" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTHYPPermitManagement_cu-*" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="vehicle≠permits(person)" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#\/|org.eventb.core.guard#-"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="drugs_check/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="64">
+    <org.eventb.core.poSequent name="drugs_check/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#EVTALLHYPPermitManagement_cu."/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ran(permits)≠(∅ ⦂ ℙ(VEHICLES))" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#0|org.eventb.core.action#'"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.event#0|org.eventb.core.action#'"/>
@@ -248,7 +248,7 @@
     <org.eventb.core.poPredicateSet name="HYPPermitManagement_ct}" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct\|" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀person⦂PEOPLE·person∈dom(permits)⇒card(permits[{person}])=1" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#="/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct}" org.eventb.core.poStamp="64">
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Question 3/PermitManagement.bpo|org.eventb.core.poFile#PermitManagement|org.eventb.core.poPredicateSet#HYPPermitManagement_ct}" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∀vehicle⦂VEHICLES·vehicle∈ran(permits)⇒card(permits ▷ {vehicle})=1" org.eventb.core.source="/Question 3/PermitManagement.bum|org.eventb.core.machineFile#PermitManagement|org.eventb.core.invariant#&gt;"/>
     </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

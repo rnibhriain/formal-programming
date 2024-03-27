@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="1">
-<org.eventb.core.carrierSet name="internal_set1" org.eventb.core.identifier="STATUS"/>
-<org.eventb.core.constant name="internal_cst1" org.eventb.core.identifier="training"/>
-<org.eventb.core.constant name="internal_cst2" org.eventb.core.identifier="selling"/>
-<org.eventb.core.constant name="internal_cst3" org.eventb.core.identifier="managing"/>
-<org.eventb.core.axiom name="internal_axm1" org.eventb.core.label="axm1" org.eventb.core.predicate="STATUS = {training, selling, managing}"/>
-<org.eventb.core.axiom name="internal_axm2" org.eventb.core.label="axm2" org.eventb.core.predicate="¬ training = selling"/>
-<org.eventb.core.axiom name="internal_axm3" org.eventb.core.label="axm3" org.eventb.core.predicate="¬ training = managing"/>
-<org.eventb.core.axiom name="internal_axm4" org.eventb.core.label="axm4" org.eventb.core.predicate="¬ selling = managing"/>
-<org.eventb.core.extendsContext name="internal_1" org.eventb.core.target="Progress_ctx"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+    <org.eventb.core.axiom name="internal_axm1A" org.eventb.core.label="axm1" org.eventb.core.predicate="STATUS = {training, selling, managing}"/>
+    <org.eventb.core.axiom name="internal_axm2A" org.eventb.core.label="axm2" org.eventb.core.predicate="¬ training = selling"/>
+    <org.eventb.core.axiom name="internal_axm3A" org.eventb.core.label="axm3" org.eventb.core.predicate="¬ training = managing"/>
+    <org.eventb.core.axiom name="internal_axm4A" org.eventb.core.label="axm4" org.eventb.core.predicate="¬ selling = managing"/>
+    <org.eventb.core.carrierSet name="internal_set1" org.eventb.core.identifier="STATUS"/>
+    <org.eventb.core.constant name="internal_cst1" org.eventb.core.identifier="training"/>
+    <org.eventb.core.constant name="internal_cst2" org.eventb.core.identifier="selling"/>
+    <org.eventb.core.constant name="internal_cst3" org.eventb.core.identifier="managing"/>
+    <org.eventb.core.extendsContext name="internal_1" org.eventb.core.target="Progress_ctx"/>
 </org.eventb.core.contextFile>

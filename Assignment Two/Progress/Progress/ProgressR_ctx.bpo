@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="2">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
-<org.eventb.core.poIdentifier name="NAMES" org.eventb.core.type="ℙ(NAMES)"/>
-<org.eventb.core.poIdentifier name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
-<org.eventb.core.poIdentifier name="managing" org.eventb.core.type="STATUS"/>
-<org.eventb.core.poIdentifier name="selling" org.eventb.core.type="STATUS"/>
-<org.eventb.core.poIdentifier name="training" org.eventb.core.type="STATUS"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Progress/ProgressR_ctx.bpo|org.eventb.core.poFile#ProgressR_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="STATUS={training,selling,managing}" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm1"/>
-<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="¬training=selling" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm2"/>
-<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="¬training=managing" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm3"/>
-<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="¬selling=managing" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm4"/>
-</org.eventb.core.poPredicateSet>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poIdentifier name="NAMES" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.poIdentifier name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
+        <org.eventb.core.poIdentifier name="selling" org.eventb.core.type="STATUS"/>
+        <org.eventb.core.poIdentifier name="managing" org.eventb.core.type="STATUS"/>
+        <org.eventb.core.poIdentifier name="training" org.eventb.core.type="STATUS"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Progress/ProgressR_ctx.bpo|org.eventb.core.poFile#ProgressR_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="STATUS={training,selling,managing}" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm1A"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="¬training=selling" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm2A"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="¬training=managing" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm3A"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="¬selling=managing" org.eventb.core.source="/Progress/ProgressR_ctx.buc|org.eventb.core.contextFile#ProgressR_ctx|org.eventb.core.axiom#internal_axm4A"/>
+    </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

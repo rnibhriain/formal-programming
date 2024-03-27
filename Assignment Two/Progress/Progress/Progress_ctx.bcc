@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
-<org.eventb.core.scCarrierSet name="NAMES" org.eventb.core.source="/Progress/Progress_ctx.buc|org.eventb.core.contextFile#Progress_ctx|org.eventb.core.carrierSet#internal_set1" org.eventb.core.type="ℙ(NAMES)"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+    <org.eventb.core.scCarrierSet name="NAMES" org.eventb.core.source="/Progress/Progress_ctx.buc|org.eventb.core.contextFile#Progress_ctx|org.eventb.core.carrierSet#internal_set1" org.eventb.core.type="ℙ(NAMES)"/>
 </org.eventb.core.scContextFile>
