@@ -14,35 +14,31 @@
     <org.eventb.core.event name="internal_inv5J" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="join">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="join"/>
         <org.eventb.core.action name="(" org.eventb.core.assignment="level ≔ level ∪ {name ↦ training}" org.eventb.core.label="act1"/>
-        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="name ∈ NAMES"/>
         <org.eventb.core.parameter name="*" org.eventb.core.identifier="name"/>
-        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="name ∉ dom(level)"/>
-        <org.eventb.core.witness name="," org.eventb.core.label="wit1" org.eventb.core.predicate="name = e"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd1" org.eventb.core.predicate="name ∉ dom(level)"/>
+        <org.eventb.core.witness name="," org.eventb.core.label="e" org.eventb.core.predicate="name = e"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="internal_inv5K" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="promotetrainee">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="name"/>
         <org.eventb.core.refinesEvent name="(" org.eventb.core.target="promotetrainee"/>
-        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="name ∈ NAMES"/>
-        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="name ∈ dom(level)"/>
-        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="level(name) = training"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="name ∈ dom(level)"/>
         <org.eventb.core.action name="+" org.eventb.core.assignment="level(name) ≔ selling" org.eventb.core.label="act1"/>
-        <org.eventb.core.witness name="-" org.eventb.core.label="wit1" org.eventb.core.predicate="name = e"/>
+        <org.eventb.core.witness name="-" org.eventb.core.label="e" org.eventb.core.predicate="name = e"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd3" org.eventb.core.predicate="level(name) = training"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="internal_inv5L" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="promotesales">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="promotesales"/>
         <org.eventb.core.parameter name="(" org.eventb.core.identifier="name"/>
-        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="name ∈ NAMES"/>
-        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="name ∈ dom(level)"/>
-        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="level(name) = selling"/>
         <org.eventb.core.action name="+" org.eventb.core.assignment="level(name) ≔ managing" org.eventb.core.label="act1"/>
-        <org.eventb.core.witness name="-" org.eventb.core.label="wit1" org.eventb.core.predicate="name = e"/>
+        <org.eventb.core.witness name="-" org.eventb.core.label="e" org.eventb.core.predicate="name = e"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd1" org.eventb.core.predicate="name ∈ dom(level)"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd2" org.eventb.core.predicate="level(name) = selling"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="internal_inv5M" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fire">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="fire"/>
         <org.eventb.core.parameter name="(" org.eventb.core.identifier="name"/>
-        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="name ∈ NAMES"/>
-        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="name ∈ dom(level)" org.eventb.core.theorem="true"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1]" org.eventb.core.predicate="name ∈ dom(level)"/>
         <org.eventb.core.action name="+" org.eventb.core.assignment="level ≔ {name} ⩤ level" org.eventb.core.label="act1"/>
-        <org.eventb.core.witness name="," org.eventb.core.label="wit1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.witness name="," org.eventb.core.label="e" org.eventb.core.predicate="name = e"/>
     </org.eventb.core.event>
 </org.eventb.core.machineFile>
