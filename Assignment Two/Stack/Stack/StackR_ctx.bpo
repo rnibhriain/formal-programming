@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="ELEMENT" org.eventb.core.type="ℙ(ELEMENT)"/>
+        <org.eventb.core.poIdentifier name="maxsize" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="maxsizf" org.eventb.core.predicate="maxsize∈ℕ1" org.eventb.core.source="/Stack/Stack_ctx.buc|org.eventb.core.contextFile#Stack_ctx|org.eventb.core.axiom#internal_axm1A"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Stack/StackR_ctx.bpo|org.eventb.core.poFile#StackR_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1"/>
+</org.eventb.core.poFile>

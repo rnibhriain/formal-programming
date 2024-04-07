@@ -1,38 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
-<org.eventb.core.event name="internal_evt11" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
-<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="stack ≔ ∅" org.eventb.core.label="act1"/>
-<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="top ≔ 0" org.eventb.core.label="act2"/>
-<org.eventb.core.action name="internal_act3" org.eventb.core.assignment="element :∈ ELEMENT" org.eventb.core.label="act3"/>
-<org.eventb.core.action name="internal_act4" org.eventb.core.assignment="query ≔ FALSE" org.eventb.core.label="act4"/>
-</org.eventb.core.event>
-<org.eventb.core.seesContext name="internal_1" org.eventb.core.target="Stack_ctx"/>
-<org.eventb.core.variable name="internal_var1" org.eventb.core.identifier="stack"/>
-<org.eventb.core.invariant name="internal_inv1" org.eventb.core.label="inv1" org.eventb.core.predicate="stack ⊆ ℕ × ELEMENT"/>
-<org.eventb.core.event name="internal_evt12" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="push">
-<org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="e"/>
-<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="e ∈ ELEMENT"/>
-<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="stack ≔ stack ∪ {top ↦ e}" org.eventb.core.label="act1"/>
-<org.eventb.core.guard name="internal_grd2" org.eventb.core.label="grd2" org.eventb.core.predicate="top &lt; maxsize"/>
-<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="top ≔ top + 1" org.eventb.core.label="act2"/>
-</org.eventb.core.event>
-<org.eventb.core.variable name="internal_var2" org.eventb.core.identifier="top"/>
-<org.eventb.core.invariant name="internal_inv3" org.eventb.core.label="inv2" org.eventb.core.predicate="top ∈ 0‥maxsize"/>
-<org.eventb.core.event name="internal_evt13" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="pop">
-<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="top &gt; 0"/>
-<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="element :∈ ran({top−1}◁stack)" org.eventb.core.label="act1"/>
-<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="stack ≔ {top−1} ⩤ stack" org.eventb.core.label="act2"/>
-<org.eventb.core.action name="internal_act3" org.eventb.core.assignment="top ≔ top − 1" org.eventb.core.label="act3"/>
-</org.eventb.core.event>
-<org.eventb.core.variable name="internal_var3" org.eventb.core.identifier="element"/>
-<org.eventb.core.invariant name="internal_inv4" org.eventb.core.label="inv3" org.eventb.core.predicate="element ∈ ELEMENT"/>
-<org.eventb.core.event name="internal_evt14" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="empty">
-<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="query :∣ (top = 0 ⇒ query' = TRUE) ∧ (top ≠ 0 ⇒ query' = FALSE)" org.eventb.core.label="act1"/>
-</org.eventb.core.event>
-<org.eventb.core.variable name="internal_var4" org.eventb.core.identifier="query"/>
-<org.eventb.core.invariant name="internal_inv5" org.eventb.core.label="inv4" org.eventb.core.predicate="query ∈ BOOL"/>
-<org.eventb.core.event name="internal_evt15" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="full">
-<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="query :∣ (top = maxsize ⇒ query'=TRUE) ∧ (top ≠ maxsize ⇒ query' = FALSE)" org.eventb.core.label="act1"/>
-</org.eventb.core.event>
-<org.eventb.core.invariant name="internal_inv6" org.eventb.core.label="inv5" org.eventb.core.predicate="dom(stack)=0‥top−1"/>
+<?xml version="1.0" encoding="UTF-8"?><org.eventb.core.machineFile version="5" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.event name="internal_evt11" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="internal_act1" org.eventb.core.assignment="stack ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="internal_act2" org.eventb.core.assignment="top ≔ 0" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="internal_act3" org.eventb.core.assignment="element :∈ ELEMENT" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="internal_act4" org.eventb.core.assignment="query ≔ FALSE" org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="internal_evt12" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="push">
+        <org.eventb.core.action name="internal_act1" org.eventb.core.assignment="stack ≔ stack ∪ {top ↦ e}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="internal_act2" org.eventb.core.assignment="top ≔ top + 1" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="e ∈ ELEMENT"/>
+        <org.eventb.core.guard name="internal_grd2" org.eventb.core.label="grd2" org.eventb.core.predicate="top &lt; maxsize"/>
+        <org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="e"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="internal_evt13" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="pop">
+        <org.eventb.core.action name="internal_act1" org.eventb.core.assignment="element :∈ ran({top−1}◁stack)" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="internal_act2" org.eventb.core.assignment="stack ≔ {top−1} ⩤ stack" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="internal_act3" org.eventb.core.assignment="top ≔ top − 1" org.eventb.core.label="act3"/>
+        <org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="top &gt; 0"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="internal_evt14" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="empty">
+        <org.eventb.core.action name="internal_act1" org.eventb.core.assignment="query :∣ (top = 0 ⇒ query' = TRUE) ∧ (top ≠ 0 ⇒ query' = FALSE)" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="internal_evt15" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="full">
+        <org.eventb.core.action name="internal_act1" org.eventb.core.assignment="query :∣ (top = maxsize ⇒ query'=TRUE) ∧ (top ≠ maxsize ⇒ query' = FALSE)" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="internal_inv1I" org.eventb.core.label="inv1" org.eventb.core.predicate="stack ⊆ ℕ × ELEMENT"/>
+    <org.eventb.core.invariant name="internal_inv3I" org.eventb.core.label="inv2" org.eventb.core.predicate="top ∈ 0‥maxsize"/>
+    <org.eventb.core.invariant name="internal_inv4I" org.eventb.core.label="inv3" org.eventb.core.predicate="element ∈ ELEMENT"/>
+    <org.eventb.core.invariant name="internal_inv5I" org.eventb.core.label="inv4" org.eventb.core.predicate="query ∈ BOOL"/>
+    <org.eventb.core.invariant name="internal_inv6I" org.eventb.core.label="inv5" org.eventb.core.predicate="dom(stack)=0‥top−1"/>
+    <org.eventb.core.seesContext name="internal_1" org.eventb.core.target="Stack_ctx"/>
+    <org.eventb.core.variable name="internal_var1" org.eventb.core.identifier="stack"/>
+    <org.eventb.core.variable name="internal_var2" org.eventb.core.identifier="top"/>
+    <org.eventb.core.variable name="internal_var3" org.eventb.core.identifier="element"/>
+    <org.eventb.core.variable name="internal_var4" org.eventb.core.identifier="query"/>
 </org.eventb.core.machineFile>

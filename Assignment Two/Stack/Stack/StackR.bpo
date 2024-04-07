@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="4">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="ELEMENT" org.eventb.core.type="ℙ(ELEMENT)"/>
+        <org.eventb.core.poIdentifier name="maxsize" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="maxsizf" org.eventb.core.predicate="maxsize∈ℕ1" org.eventb.core.source="/Stack/Stack_ctx.buc|org.eventb.core.contextFile#Stack_ctx|org.eventb.core.axiom#internal_axm1A"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="top" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="element" org.eventb.core.type="ELEMENT"/>
+        <org.eventb.core.poIdentifier name="stack" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+        <org.eventb.core.poIdentifier name="query" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poPredicate name="elemenu" org.eventb.core.predicate="stack⊆ℕ × ELEMENT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv1I"/>
+        <org.eventb.core.poPredicate name="elemenv" org.eventb.core.predicate="top∈0 ‥ maxsize" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv3I"/>
+        <org.eventb.core.poPredicate name="elemenw" org.eventb.core.predicate="element∈ELEMENT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv4I"/>
+        <org.eventb.core.poPredicate name="elemenx" org.eventb.core.predicate="query∈BOOL" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv5I"/>
+        <org.eventb.core.poPredicate name="elemeny" org.eventb.core.predicate="dom(stack)=0 ‥ top − 1" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.invariant#internal_inv6I"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTStack_ct~" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="top'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="element'" org.eventb.core.type="ELEMENT"/>
+        <org.eventb.core.poIdentifier name="query'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="stack'" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPStack_ct~" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTIDENTStack_ct~" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="push/grd2/GRD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="top&lt;maxsize" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12|org.eventb.core.guard#internal_grd2"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12|org.eventb.core.guard#internal_grd2"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#push\/grd2\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTStack_cu'" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="top'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="e" org.eventb.core.type="ELEMENT"/>
+        <org.eventb.core.poIdentifier name="stack'" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPStack_cu'" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTIDENTStack_cu'" org.eventb.core.poStamp="3"/>
+    <org.eventb.core.poSequent name="pop/grd1/GRD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="4">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="top&gt;0" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.guard#internal_grd1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.guard#internal_grd1"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#pop\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="pop/act1/SIM" org.eventb.core.accurate="false" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="4">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu(">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="⊤" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="element'∈ran({top − 1} ◁ stack)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.action#internal_act1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.action#internal_act1"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#pop\/act1\/SIM|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTStack_cu(" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="top'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="element'" org.eventb.core.type="ELEMENT"/>
+        <org.eventb.core.poIdentifier name="stack'" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPStack_cu(" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTIDENTStack_cu(" org.eventb.core.poStamp="4"/>
+    <org.eventb.core.poSequent name="empty/act1/SIM" org.eventb.core.accurate="false" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="4">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu)">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="⊤" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#+"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(top=0⇒query'=TRUE)∧(top≠0⇒query'=FALSE)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt14|org.eventb.core.action#internal_act1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt14"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt14|org.eventb.core.action#internal_act1"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#+"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#empty\/act1\/SIM|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTStack_cu)" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="query'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPStack_cu)" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTIDENTStack_cu)" org.eventb.core.poStamp="4"/>
+    <org.eventb.core.poSequent name="full/act1/SIM" org.eventb.core.accurate="false" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="4">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu*">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="⊤" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#,"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(top=maxsize⇒query'=TRUE)∧(top≠maxsize⇒query'=FALSE)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt15|org.eventb.core.action#internal_act1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt15"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt15|org.eventb.core.action#internal_act1"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#,"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#full\/act1\/SIM|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTStack_cu*" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="query'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPStack_cu*" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTIDENTStack_cu*" org.eventb.core.poStamp="4"/>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1"/>
+</org.eventb.core.poFile>

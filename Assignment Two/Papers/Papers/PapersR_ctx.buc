@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="1">
-<org.eventb.core.extendsContext name="internal_1" org.eventb.core.target="Papers_ctx"/>
-<org.eventb.core.carrierSet name="internal_set1" org.eventb.core.identifier="STATUS"/>
-<org.eventb.core.constant name="internal_cst1" org.eventb.core.identifier="present"/>
-<org.eventb.core.constant name="internal_cst2" org.eventb.core.identifier="absent"/>
-<org.eventb.core.axiom name="internal_axm1" org.eventb.core.label="axm1" org.eventb.core.predicate="STATUS = {present, absent}"/>
-<org.eventb.core.axiom name="internal_axm2" org.eventb.core.label="axm2" org.eventb.core.predicate="¬ present = absent"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+    <org.eventb.core.axiom name="internal_axm1A" org.eventb.core.label="axm1" org.eventb.core.predicate="STATUS = {present, absent}"/>
+    <org.eventb.core.axiom name="internal_axm2A" org.eventb.core.label="axm2" org.eventb.core.predicate="¬ present = absent"/>
+    <org.eventb.core.carrierSet name="internal_set1" org.eventb.core.identifier="STATUS"/>
+    <org.eventb.core.constant name="internal_cst1" org.eventb.core.identifier="present"/>
+    <org.eventb.core.constant name="internal_cst2" org.eventb.core.identifier="absent"/>
+    <org.eventb.core.extendsContext name="internal_1" org.eventb.core.target="Papers_ctx"/>
 </org.eventb.core.contextFile>

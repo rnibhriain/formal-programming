@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="1">
-<org.eventb.core.carrierSet name="internal_set1" org.eventb.core.identifier="HOUSE"/>
+<?xml version="1.0" encoding="UTF-8"?><org.eventb.core.contextFile version="3" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.carrierSet name="internal_set1" org.eventb.core.identifier="HOUSE"/>
 </org.eventb.core.contextFile>

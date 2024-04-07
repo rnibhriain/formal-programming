@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="1">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
-<org.eventb.core.poIdentifier name="HOUSE" org.eventb.core.type="ℙ(HOUSE)"/>
-<org.eventb.core.poIdentifier name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
-<org.eventb.core.poIdentifier name="absent" org.eventb.core.type="STATUS"/>
-<org.eventb.core.poIdentifier name="present" org.eventb.core.type="STATUS"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Papers/PapersR_ctx.bpo|org.eventb.core.poFile#PapersR_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="STATUS={present,absent}" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm1"/>
-<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="¬present=absent" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm2"/>
-</org.eventb.core.poPredicateSet>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="HOUSE" org.eventb.core.type="ℙ(HOUSE)"/>
+        <org.eventb.core.poIdentifier name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
+        <org.eventb.core.poIdentifier name="absent" org.eventb.core.type="STATUS"/>
+        <org.eventb.core.poIdentifier name="present" org.eventb.core.type="STATUS"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Papers/PapersR_ctx.bpo|org.eventb.core.poFile#PapersR_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="STATUS={present,absent}" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm1A"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="¬present=absent" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm2A"/>
+    </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

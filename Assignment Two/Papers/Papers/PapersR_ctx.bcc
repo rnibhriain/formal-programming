@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
-<org.eventb.core.scExtendsContext name="EXTENDS0" org.eventb.core.scTarget="/Papers/Papers_ctx.bcc|org.eventb.core.scContextFile#Papers_ctx" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.extendsContext#internal_1"/>
-<org.eventb.core.scInternalContext name="Papers_ctx">
-<org.eventb.core.scCarrierSet name="HOUSE" org.eventb.core.source="/Papers/Papers_ctx.buc|org.eventb.core.contextFile#Papers_ctx|org.eventb.core.carrierSet#internal_set1" org.eventb.core.type="ℙ(HOUSE)"/>
-</org.eventb.core.scInternalContext>
-<org.eventb.core.scAxiom name="AXM0" org.eventb.core.label="axm1" org.eventb.core.predicate="STATUS={present,absent}" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm1"/>
-<org.eventb.core.scAxiom name="AXM1" org.eventb.core.label="axm2" org.eventb.core.predicate="¬present=absent" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm2"/>
-<org.eventb.core.scCarrierSet name="STATUS" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.carrierSet#internal_set1" org.eventb.core.type="ℙ(STATUS)"/>
-<org.eventb.core.scConstant name="absent" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.constant#internal_cst2" org.eventb.core.type="STATUS"/>
-<org.eventb.core.scConstant name="present" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.constant#internal_cst1" org.eventb.core.type="STATUS"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+    <org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/Papers/Papers_ctx.bcc|org.eventb.core.scContextFile#Papers_ctx" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.extendsContext#internal_1"/>
+    <org.eventb.core.scInternalContext name="Papers_ctx">
+        <org.eventb.core.scCarrierSet name="HOUSE" org.eventb.core.source="/Papers/Papers_ctx.buc|org.eventb.core.contextFile#Papers_ctx|org.eventb.core.carrierSet#internal_set1" org.eventb.core.type="ℙ(HOUSE)"/>
+    </org.eventb.core.scInternalContext>
+    <org.eventb.core.scAxiom name="Papers_cty" org.eventb.core.label="axm1" org.eventb.core.predicate="STATUS={present,absent}" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm1A" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="Papers_ctz" org.eventb.core.label="axm2" org.eventb.core.predicate="¬present=absent" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.axiom#internal_axm2A" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scConstant name="absent" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.constant#internal_cst2" org.eventb.core.type="STATUS"/>
+    <org.eventb.core.scCarrierSet name="STATUS" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.carrierSet#internal_set1" org.eventb.core.type="ℙ(STATUS)"/>
+    <org.eventb.core.scConstant name="present" org.eventb.core.source="/Papers/PapersR_ctx.buc|org.eventb.core.contextFile#PapersR_ctx|org.eventb.core.constant#internal_cst1" org.eventb.core.type="STATUS"/>
 </org.eventb.core.scContextFile>

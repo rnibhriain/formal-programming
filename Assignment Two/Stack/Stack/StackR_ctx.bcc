@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+    <org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/Stack/Stack_ctx.bcc|org.eventb.core.scContextFile#Stack_ctx" org.eventb.core.source="/Stack/StackR_ctx.buc|org.eventb.core.contextFile#StackR_ctx|org.eventb.core.extendsContext#'"/>
+    <org.eventb.core.scInternalContext name="Stack_ctx">
+        <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="maxsize∈ℕ1" org.eventb.core.source="/Stack/Stack_ctx.buc|org.eventb.core.contextFile#Stack_ctx|org.eventb.core.axiom#internal_axm1A" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scConstant name="maxsize" org.eventb.core.source="/Stack/Stack_ctx.buc|org.eventb.core.contextFile#Stack_ctx|org.eventb.core.constant#internal_cst1" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.scCarrierSet name="ELEMENT" org.eventb.core.source="/Stack/Stack_ctx.buc|org.eventb.core.contextFile#Stack_ctx|org.eventb.core.carrierSet#internal_set1" org.eventb.core.type="ℙ(ELEMENT)"/>
+    </org.eventb.core.scInternalContext>
+</org.eventb.core.scContextFile>

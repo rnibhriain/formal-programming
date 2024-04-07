@@ -1,29 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
-<org.eventb.core.event name="internal_evt11" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
-<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="papers ≔ ∅" org.eventb.core.label="act1"/>
-<org.eventb.core.action name="internal_act2" org.eventb.core.assignment="answer ≔ FALSE" org.eventb.core.label="act2"/>
-</org.eventb.core.event>
-<org.eventb.core.variable name="internal_var1" org.eventb.core.identifier="papers"/>
-<org.eventb.core.invariant name="internal_inv1" org.eventb.core.label="inv1" org.eventb.core.predicate="papers ⊆ HOUSE"/>
-<org.eventb.core.variable name="internal_var2" org.eventb.core.identifier="answer"/>
-<org.eventb.core.invariant name="internal_inv2" org.eventb.core.label="inv2" org.eventb.core.predicate="answer ∈ BOOL"/>
-<org.eventb.core.seesContext name="internal_1" org.eventb.core.target="Papers_ctx"/>
-<org.eventb.core.event name="internal_evt12" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="addpaper">
-<org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="p"/>
-<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ HOUSE"/>
-<org.eventb.core.guard name="internal_grd2" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∉ papers"/>
-<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="papers ≔ papers ∪ {p}" org.eventb.core.label="act1"/>
-</org.eventb.core.event>
-<org.eventb.core.event name="internal_evt13" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="removepaper">
-<org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="p"/>
-<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ HOUSE"/>
-<org.eventb.core.guard name="internal_grd2" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∈ papers"/>
-<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="papers ≔ papers ∖ {p}" org.eventb.core.label="act1"/>
-</org.eventb.core.event>
-<org.eventb.core.event name="internal_evt14" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="paperquery">
-<org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="p"/>
-<org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ HOUSE"/>
-<org.eventb.core.action name="internal_act1" org.eventb.core.assignment="answer :∣ (p∈papers⇒answer'=TRUE)∧(p∉papers⇒answer'=FALSE)" org.eventb.core.label="act1"/>
-</org.eventb.core.event>
+<?xml version="1.0" encoding="UTF-8"?><org.eventb.core.machineFile version="5" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.event name="internal_evt11" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="internal_act1" org.eventb.core.assignment="papers ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="internal_act2" org.eventb.core.assignment="answer ≔ FALSE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="internal_evt12" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="addpaper">
+        <org.eventb.core.action name="internal_act1" org.eventb.core.assignment="papers ≔ papers ∪ {p}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ HOUSE"/>
+        <org.eventb.core.guard name="internal_grd2" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∉ papers"/>
+        <org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="p"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="internal_evt13" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="removepaper">
+        <org.eventb.core.action name="internal_act1" org.eventb.core.assignment="papers ≔ papers ∖ {p}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ HOUSE"/>
+        <org.eventb.core.guard name="internal_grd2" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∈ papers"/>
+        <org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="p"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="internal_evt14" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="paperquery">
+        <org.eventb.core.action name="internal_act1" org.eventb.core.assignment="answer :∣ (p∈papers⇒answer'=TRUE)∧(p∉papers⇒answer'=FALSE)" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="internal_grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ HOUSE"/>
+        <org.eventb.core.parameter name="internal_prm1" org.eventb.core.identifier="p"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="internal_inv1I" org.eventb.core.label="inv1" org.eventb.core.predicate="papers ⊆ HOUSE"/>
+    <org.eventb.core.invariant name="internal_inv2I" org.eventb.core.label="inv2" org.eventb.core.predicate="answer ∈ BOOL"/>
+    <org.eventb.core.seesContext name="internal_1" org.eventb.core.target="Papers_ctx"/>
+    <org.eventb.core.variable name="internal_var1" org.eventb.core.identifier="papers"/>
+    <org.eventb.core.variable name="internal_var2" org.eventb.core.identifier="answer"/>
 </org.eventb.core.machineFile>
