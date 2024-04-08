@@ -3,7 +3,7 @@
     <org.eventb.core.event name="internal_evt11" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
         <org.eventb.core.action name="internal_act1" org.eventb.core.assignment="papersarr ≔ ∅" org.eventb.core.label="act1"/>
         <org.eventb.core.action name="internal_act2" org.eventb.core.assignment="num ≔ 0" org.eventb.core.label="act2"/>
-        <org.eventb.core.action name="internal_act3" org.eventb.core.assignment="response ≔ present" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="internal_act3" org.eventb.core.assignment="response ≔ absent" org.eventb.core.label="act3"/>
     </org.eventb.core.event>
     <org.eventb.core.invariant name="internal_inv1I" org.eventb.core.label="inv1" org.eventb.core.predicate="papersarr ∈ HOUSE ⇸ STATUS"/>
     <org.eventb.core.invariant name="internal_inv2I" org.eventb.core.label="inv2" org.eventb.core.predicate="num ∈ ℕ"/>
@@ -31,6 +31,7 @@
         <org.eventb.core.witness name="+" org.eventb.core.label="p" org.eventb.core.predicate="house = p"/>
         <org.eventb.core.action name="," org.eventb.core.assignment="papersarr(house) ≔ absent" org.eventb.core.label="act1"/>
         <org.eventb.core.action name="-" org.eventb.core.assignment="num ≔ num − 1" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd3" org.eventb.core.predicate="num − 1 = card( papersarr∼[{present}] ) − 1"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="internal_inv4L" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="paperquery">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="house"/>

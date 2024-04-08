@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="43">
+<org.eventb.core.poFile org.eventb.core.poStamp="48">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="4">
         <org.eventb.core.poIdentifier name="HOUSE" org.eventb.core.type="ℙ(HOUSE)"/>
         <org.eventb.core.poIdentifier name="STATUS" org.eventb.core.type="ℙ(STATUS)"/>
@@ -68,18 +68,18 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="40">
+    <org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="44">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPPapersR_cu)"/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇔present=present" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4Q"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇔absent=present" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4Q"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.event#internal_evt11"/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_evt11"/>
         <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4Q"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#INITIALISATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="40">
+    <org.eventb.core.poSequent name="INITIALISATION/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="44">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPPapersR_cu)"/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=FALSE⇔present=absent" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4R"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=FALSE⇔absent=absent" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4R"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.event#internal_evt11"/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_evt11"/>
         <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv4R"/>
@@ -172,19 +172,25 @@
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="house∈HOUSE" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4J|org.eventb.core.guard#*"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="house∉dom(papersarr)" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4J|org.eventb.core.guard#,"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="removepaper/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="42">
+    <org.eventb.core.poSequent name="removepaper/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="46">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTHYPPapersR_cu+("/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="house∈dom(papersarr)∧papersarr∈HOUSE ⇸ STATUS" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.guard#*"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.guard#*"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTHYPPapersR_cu+("/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="removepaper/p/WFIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of witness" org.eventb.core.poStamp="42">
+    <org.eventb.core.poSequent name="removepaper/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="48">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTHYPPapersR_cu+)"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(papersarr∼[{present}])" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.guard#."/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.guard#."/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTHYPPapersR_cu+)"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="removepaper/p/WFIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of witness" org.eventb.core.poStamp="48">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPPapersR_cu+"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃p⦂HOUSE·house=p" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.witness#+"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.witness#+"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#removepaper\/p\/WFIS|org.eventb.core.poPredicateSet#SEQHYP"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="removepaper/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="42">
+    <org.eventb.core.poSequent name="removepaper/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="48">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPPapersR_cu+"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="papersarr{house ↦ absent}∈HOUSE ⇸ STATUS" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv1I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.event#internal_evt13"/>
@@ -193,7 +199,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#removepaper\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#HYPPapersR_ct\||org.eventb.core.poPredicate#PRD0"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="removepaper/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="42">
+    <org.eventb.core.poSequent name="removepaper/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="48">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPPapersR_cu+"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="num − 1∈ℕ" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.invariant#internal_inv2I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Papers/Papers.bum|org.eventb.core.machineFile#Papers|org.eventb.core.event#internal_evt13"/>
@@ -202,7 +208,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#removepaper\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#HYPPapersR_ct\||org.eventb.core.poPredicate#PRD1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="removepaper/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="42">
+    <org.eventb.core.poSequent name="removepaper/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="48">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPPapersR_cu+">
             <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="house=p" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.witness#+"/>
         </org.eventb.core.poPredicateSet>
@@ -213,7 +219,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#removepaper\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#HYPPapersR_ct\||org.eventb.core.poPredicate#PRD2"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="removepaper/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="42">
+    <org.eventb.core.poSequent name="removepaper/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="48">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPPapersR_cu+">
             <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="house=p" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.witness#+"/>
         </org.eventb.core.poPredicateSet>
@@ -224,7 +230,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#removepaper\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#HYPPapersR_ct\||org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="removepaper/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="42">
+    <org.eventb.core.poSequent name="removepaper/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="48">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPPapersR_cu+">
             <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="house=p" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.witness#+"/>
         </org.eventb.core.poPredicateSet>
@@ -235,7 +241,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poSequent#removepaper\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="removepaper/grd2/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="42">
+    <org.eventb.core.poSequent name="removepaper/grd2/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="48">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPPapersR_cu+">
             <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="house=p" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.witness#+"/>
         </org.eventb.core.poPredicateSet>
@@ -255,8 +261,11 @@
     <org.eventb.core.poPredicateSet name="EVTHYPPapersR_cu+(" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTIDENTPapersR_cu+" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="house∈dom(papersarr)" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.guard#)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPPapersR_cu+" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTHYPPapersR_cu+(" org.eventb.core.poStamp="42">
+    <org.eventb.core.poPredicateSet name="EVTHYPPapersR_cu+)" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTHYPPapersR_cu+(" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="papersarr(house)=present" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPapersR_cu+" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTHYPPapersR_cu+)" org.eventb.core.poStamp="48">
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="num − 1=card(papersarr∼[{present}]) − 1" org.eventb.core.source="/Papers/PapersR.bum|org.eventb.core.machineFile#PapersR|org.eventb.core.event#internal_inv4K|org.eventb.core.guard#."/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poSequent name="paperquery/p/WFIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of witness" org.eventb.core.poStamp="42">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Papers/PapersR.bpo|org.eventb.core.poFile#PapersR|org.eventb.core.poPredicateSet#EVTALLHYPPapersR_cu,"/>

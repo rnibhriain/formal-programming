@@ -438,81 +438,37 @@
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="promotetrainee/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="NAMES,STATUS" org.eventb.core.psManual="true">
+    <org.eventb.core.prProof name="promotetrainee/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15" org.eventb.core.prSets="NAMES,STATUS" org.eventb.core.psManual="true">
         <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-            <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
-                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
-                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with trainee=level∼[{training}]" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3">
-                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
-                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with level(name)=training" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p2">
-                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
-                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
-                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with name=e" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1">
-                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
-                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p10"/>
-                                        <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p9"/>
-                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p1"/>
-                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (name=e)" org.eventb.core.prHyps="">
-                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
-                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps=""/>
-                                            </org.eventb.core.prAnte>
-                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p1">
-                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (name ↦ training∈level)" org.eventb.core.prHyps="">
-                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
-                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps=""/>
-                                                    </org.eventb.core.prAnte>
-                                                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p13"/>
-                                                    <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p13">
-                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p1"/>
-                                                    </org.eventb.core.prAnte>
-                                                    <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p13"/>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                            <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p1"/>
-                                            <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p1"/>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                </org.eventb.core.prRule>
-                            </org.eventb.core.prAnte>
-                        </org.eventb.core.prRule>
-                    </org.eventb.core.prAnte>
-                </org.eventb.core.prRule>
-            </org.eventb.core.prAnte>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p14,p5,p6,p13,p4,p12,p7,p9,p1,p15,p10,p11,p8,p2,p3">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="30000"/>
         </org.eventb.core.prRule>
         <org.eventb.core.prIdent name="e" org.eventb.core.type="NAMES"/>
         <org.eventb.core.prIdent name="level" org.eventb.core.type="ℙ(NAMES×STATUS)"/>
+        <org.eventb.core.prIdent name="manager" org.eventb.core.type="ℙ(NAMES)"/>
+        <org.eventb.core.prIdent name="managing" org.eventb.core.type="STATUS"/>
         <org.eventb.core.prIdent name="name" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prIdent name="sales" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="selling" org.eventb.core.type="STATUS"/>
         <org.eventb.core.prIdent name="trainee" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="training" org.eventb.core.type="STATUS"/>
-        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊤"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="name=e"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(level)=trainee∪sales∪manager"/>
         <org.eventb.core.prPred name="p2" org.eventb.core.predicate="level(name)=training"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="name=e"/>
         <org.eventb.core.prPred name="p4" org.eventb.core.predicate="trainee⊆NAMES"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="level∼[{level(name)}] ∖ {e}=(level{name ↦ selling})∼[{level(name)}]"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬training=selling"/>
         <org.eventb.core.prPred name="p0" org.eventb.core.predicate="trainee ∖ {e}=(level{name ↦ selling})∼[{training}]"/>
-        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="name ↦ training∈level"/>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="manager⊆NAMES">
-            <org.eventb.core.prIdent name="manager" org.eventb.core.type="ℙ(NAMES)"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="name∈dom(level)"/>
-        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="level∼[{level(e)}] ∖ {e}=(level{e ↦ selling})∼[{level(e)}]"/>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="sales⊆NAMES">
-            <org.eventb.core.prIdent name="sales" org.eventb.core.type="ℙ(NAMES)"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="level∼[{training}] ∖ {e}=(level{name ↦ selling})∼[{training}]"/>
-        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="e∈dom(level)"/>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="trainee=level∼[{training}]"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
-        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.cut"/>
-        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬training=managing"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="manager⊆NAMES"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="name∈dom(level)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="level∈NAMES ⇸ STATUS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="sales=level∼[{selling}]"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="manager=level∼[{managing}]"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="sales⊆NAMES"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬selling=managing"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="STATUS={training,selling,managing}"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="trainee=level∼[{training}]"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="promotetrainee/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="NAMES,STATUS">
         <org.eventb.core.lang name="L"/>
@@ -699,45 +655,35 @@
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="promotetrainee/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="NAMES,STATUS">
+    <org.eventb.core.prProof name="promotetrainee/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="NAMES,STATUS" org.eventb.core.psManual="true">
         <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-            <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
-                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
-                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with manager=level∼[{managing}]" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2">
-                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
-                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with level(name)=training" org.eventb.core.prHyps="p1">
-                            <org.eventb.core.prAnte name="'">
-                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
-                            </org.eventb.core.prAnte>
-                        </org.eventb.core.prRule>
-                    </org.eventb.core.prAnte>
-                </org.eventb.core.prRule>
-            </org.eventb.core.prAnte>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p13,p4,p5,p12,p3,p11,p6,p8,p1,p14,p9,p10,p7,p2">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="30000"/>
         </org.eventb.core.prRule>
         <org.eventb.core.prIdent name="level" org.eventb.core.type="ℙ(NAMES×STATUS)"/>
         <org.eventb.core.prIdent name="manager" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="managing" org.eventb.core.type="STATUS"/>
         <org.eventb.core.prIdent name="name" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prIdent name="sales" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="selling" org.eventb.core.type="STATUS"/>
+        <org.eventb.core.prIdent name="trainee" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="training" org.eventb.core.type="STATUS"/>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="level∼[{managing}]=(level{name ↦ selling})∼[{managing}]"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(level)=trainee∪sales∪manager"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="level(name)=training"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="trainee⊆NAMES"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬training=selling"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬training=managing"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="manager⊆NAMES"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="name∈dom(level)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="level∈NAMES ⇸ STATUS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="sales=level∼[{selling}]"/>
         <org.eventb.core.prPred name="p0" org.eventb.core.predicate="manager=(level{name ↦ selling})∼[{managing}]"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="level(name)=training"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="manager=level∼[{managing}]"/>
-        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="sales⊆NAMES">
-            <org.eventb.core.prIdent name="sales" org.eventb.core.type="ℙ(NAMES)"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="trainee⊆NAMES">
-            <org.eventb.core.prIdent name="trainee" org.eventb.core.type="ℙ(NAMES)"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="manager⊆NAMES"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="manager=level∼[{managing}]"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="sales⊆NAMES"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬selling=managing"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="STATUS={training,selling,managing}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="trainee=level∼[{training}]"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="promotesales/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="NAMES,STATUS">
         <org.eventb.core.lang name="L"/>
@@ -794,81 +740,10 @@
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="promotesales/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15" org.eventb.core.prSets="NAMES,STATUS" org.eventb.core.psManual="true">
+    <org.eventb.core.prProof name="promotesales/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15" org.eventb.core.prSets="NAMES,STATUS" org.eventb.core.psManual="true">
         <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-            <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
-                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
-                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with sales=level∼[{selling}]" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10">
-                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
-                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with level(name)=selling" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p3">
-                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
-                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p18"/>
-                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p17"/>
-                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
-                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
-                                    <org.eventb.core.prAnte name="'">
-                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p18"/>
-                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with name=e" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p1">
-                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
-                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p20"/>
-                                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p8"/>
-                                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p1"/>
-                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (name=e)" org.eventb.core.prHyps="">
-                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p22">
-                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p22" org.eventb.core.prHyps=""/>
-                                                    </org.eventb.core.prAnte>
-                                                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p1">
-                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p1"/>
-                                                    </org.eventb.core.prAnte>
-                                                    <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p1">
-                                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with name=e" org.eventb.core.prHyps="p1">
-                                                            <org.eventb.core.prAnte name="'">
-                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
-                                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (name∈dom(level))" org.eventb.core.prHyps="">
-                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p22">
-                                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p22" org.eventb.core.prHyps=""/>
-                                                                    </org.eventb.core.prAnte>
-                                                                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
-                                                                        <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ProB (no enumeration / all cases checked)" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p2,p3,p1,p4,p5,p6,p7,p8,p9,p10,p11,p12,p20,p13,p14,p15"/>
-                                                                    </org.eventb.core.prAnte>
-                                                                    <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p8">
-                                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ah (trainee=level∼[{training}])" org.eventb.core.prHyps="">
-                                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p22">
-                                                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p22" org.eventb.core.prHyps=""/>
-                                                                            </org.eventb.core.prAnte>
-                                                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p15">
-                                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ProB (no enumeration / all cases checked)" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p2,p3,p1,p4,p5,p6,p7,p8,p9,p10,p11,p12,p20,p13,p14,p15"/>
-                                                                            </org.eventb.core.prAnte>
-                                                                            <org.eventb.core.prAnte name=")" org.eventb.core.prHyps="p15">
-                                                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with trainee=level∼[{training}]" org.eventb.core.prHyps="p15">
-                                                                                    <org.eventb.core.prAnte name="'">
-                                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
-                                                                                    </org.eventb.core.prAnte>
-                                                                                </org.eventb.core.prRule>
-                                                                            </org.eventb.core.prAnte>
-                                                                            <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p15"/>
-                                                                        </org.eventb.core.prRule>
-                                                                    </org.eventb.core.prAnte>
-                                                                    <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p8"/>
-                                                                </org.eventb.core.prRule>
-                                                            </org.eventb.core.prAnte>
-                                                        </org.eventb.core.prRule>
-                                                    </org.eventb.core.prAnte>
-                                                    <org.eventb.core.prPredRef name=".pred" org.eventb.core.prRef="p1"/>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                </org.eventb.core.prRule>
-                            </org.eventb.core.prAnte>
-                        </org.eventb.core.prRule>
-                    </org.eventb.core.prAnte>
-                </org.eventb.core.prRule>
-            </org.eventb.core.prAnte>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p14,p5,p6,p13,p4,p12,p7,p9,p1,p15,p10,p11,p8,p2,p3">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="30000"/>
         </org.eventb.core.prRule>
         <org.eventb.core.prIdent name="e" org.eventb.core.type="NAMES"/>
         <org.eventb.core.prIdent name="level" org.eventb.core.type="ℙ(NAMES×STATUS)"/>
@@ -879,37 +754,23 @@
         <org.eventb.core.prIdent name="selling" org.eventb.core.type="STATUS"/>
         <org.eventb.core.prIdent name="trainee" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="training" org.eventb.core.type="STATUS"/>
-        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="⊤"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="name=e"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="dom(level)=trainee∪sales∪manager"/>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="level(name)=selling"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(level)=trainee∪sales∪manager"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="level(name)=selling"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="name=e"/>
         <org.eventb.core.prPred name="p4" org.eventb.core.predicate="trainee⊆NAMES"/>
         <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬training=selling"/>
         <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬training=managing"/>
         <org.eventb.core.prPred name="p7" org.eventb.core.predicate="manager⊆NAMES"/>
         <org.eventb.core.prPred name="p8" org.eventb.core.predicate="name∈dom(level)"/>
-        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="name ↦ level(name)∈level"/>
         <org.eventb.core.prPred name="p9" org.eventb.core.predicate="level∈NAMES ⇸ STATUS"/>
-        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="level∼[{selling}] ∖ {e}=(level{name ↦ managing})∼[{selling}]"/>
         <org.eventb.core.prPred name="p10" org.eventb.core.predicate="sales=level∼[{selling}]"/>
         <org.eventb.core.prPred name="p11" org.eventb.core.predicate="manager=level∼[{managing}]"/>
         <org.eventb.core.prPred name="p12" org.eventb.core.predicate="sales⊆NAMES"/>
         <org.eventb.core.prPred name="p0" org.eventb.core.predicate="sales ∖ {e}=(level{name ↦ managing})∼[{selling}]"/>
-        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="e∈dom(level)"/>
         <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬selling=managing"/>
-        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="name ↦ selling∈level"/>
-        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="level∼[{level(name)}] ∖ {e}=(level{name ↦ managing})∼[{level(name)}]"/>
         <org.eventb.core.prPred name="p14" org.eventb.core.predicate="STATUS={training,selling,managing}"/>
         <org.eventb.core.prPred name="p15" org.eventb.core.predicate="trainee=level∼[{training}]"/>
-        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="level∼[{level(e)}] ∖ {e}=(level{e ↦ managing})∼[{level(e)}]"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
-        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.cut"/>
-        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
-        <org.eventb.core.prReas name="r7" org.eventb.core.prRID="de.prob.eventb.disprover.core.disproverReasoner"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="promotesales/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="NAMES,STATUS">
         <org.eventb.core.lang name="L"/>
@@ -1078,45 +939,35 @@
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="promotesales/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="NAMES,STATUS">
+    <org.eventb.core.prProof name="promotesales/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="NAMES,STATUS" org.eventb.core.psManual="true">
         <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-            <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
-                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
-                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with trainee=level∼[{training}]" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2">
-                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
-                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with level(name)=selling" org.eventb.core.prHyps="p1">
-                            <org.eventb.core.prAnte name="'">
-                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
-                            </org.eventb.core.prAnte>
-                        </org.eventb.core.prRule>
-                    </org.eventb.core.prAnte>
-                </org.eventb.core.prRule>
-            </org.eventb.core.prAnte>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p13,p4,p5,p12,p3,p11,p6,p8,p1,p14,p9,p10,p7,p2">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="30000"/>
         </org.eventb.core.prRule>
         <org.eventb.core.prIdent name="level" org.eventb.core.type="ℙ(NAMES×STATUS)"/>
+        <org.eventb.core.prIdent name="manager" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="managing" org.eventb.core.type="STATUS"/>
         <org.eventb.core.prIdent name="name" org.eventb.core.type="NAMES"/>
+        <org.eventb.core.prIdent name="sales" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="selling" org.eventb.core.type="STATUS"/>
         <org.eventb.core.prIdent name="trainee" org.eventb.core.type="ℙ(NAMES)"/>
         <org.eventb.core.prIdent name="training" org.eventb.core.type="STATUS"/>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="trainee=(level{name ↦ managing})∼[{training}]"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="level(name)=selling"/>
-        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="sales⊆NAMES">
-            <org.eventb.core.prIdent name="sales" org.eventb.core.type="ℙ(NAMES)"/>
-        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(level)=trainee∪sales∪manager"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="level(name)=selling"/>
         <org.eventb.core.prPred name="p3" org.eventb.core.predicate="trainee⊆NAMES"/>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="level∼[{training}]=(level{name ↦ managing})∼[{training}]"/>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="manager⊆NAMES">
-            <org.eventb.core.prIdent name="manager" org.eventb.core.type="ℙ(NAMES)"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="trainee=level∼[{training}]"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬training=selling"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬training=managing"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="manager⊆NAMES"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="name∈dom(level)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="level∈NAMES ⇸ STATUS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="trainee=(level{name ↦ managing})∼[{training}]"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="sales=level∼[{selling}]"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="manager=level∼[{managing}]"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="sales⊆NAMES"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬selling=managing"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="STATUS={training,selling,managing}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="trainee=level∼[{training}]"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="fire/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="NAMES,STATUS">
         <org.eventb.core.lang name="L"/>

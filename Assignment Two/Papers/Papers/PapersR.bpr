@@ -358,25 +358,63 @@
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="removepaper/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="HOUSE,STATUS" org.eventb.core.psManual="true">
+    <org.eventb.core.prProof name="removepaper/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="HOUSE,STATUS" org.eventb.core.psManual="true">
         <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
             <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
-                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
-                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
-                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with num=card(papers)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
-                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
-                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
-                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with house=p" org.eventb.core.prHyps="p3">
-                            <org.eventb.core.prAnte name="'">
-                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p10"/>
-                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p9"/>
-                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
-                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with papersarr(house)=present" org.eventb.core.prHyps="p2">
+                <org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p1,p10,p11,p12,p13,p14,p15"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with num=card(papers)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p20">
+                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p18"/>
+                                <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p19"/>
+                                <org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p17,p9"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p2"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
                                     <org.eventb.core.prAnte name="'">
-                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
+                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with papersarr(house)=present" org.eventb.core.prHyps="p3">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p21"/>
+                                                <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p22"/>
+                                                <org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p23"/>
+                                                <org.eventb.core.prHypAction name="FORWARD_INF3" org.eventb.core.prHyps="p12" org.eventb.core.prInfHyps="p24"/>
+                                                <org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p25"/>
+                                                <org.eventb.core.prHypAction name="FORWARD_INF5" org.eventb.core.prHyps="p18" org.eventb.core.prInfHyps="p26"/>
+                                                <org.eventb.core.prHypAction name="DESELECT6" org.eventb.core.prHyps="p5,p6,p1,p12,p14,p18"/>
+                                                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p3"/>
+                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with house=p" org.eventb.core.prHyps="p4">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p27" org.eventb.core.prInfHyps="p28"/>
+                                                        <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p21" org.eventb.core.prInfHyps="p29"/>
+                                                        <org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p22" org.eventb.core.prInfHyps="p30"/>
+                                                        <org.eventb.core.prHypAction name="FORWARD_INF3" org.eventb.core.prHyps="p23" org.eventb.core.prInfHyps="p31"/>
+                                                        <org.eventb.core.prHypAction name="FORWARD_INF4" org.eventb.core.prHyps="p24" org.eventb.core.prInfHyps="p32"/>
+                                                        <org.eventb.core.prHypAction name="FORWARD_INF5" org.eventb.core.prHyps="p25" org.eventb.core.prInfHyps="p33"/>
+                                                        <org.eventb.core.prHypAction name="FORWARD_INF6" org.eventb.core.prHyps="p26" org.eventb.core.prInfHyps="p34"/>
+                                                        <org.eventb.core.prHypAction name="DESELECT7" org.eventb.core.prHyps="p27,p21,p22,p23,p24,p25,p26"/>
+                                                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p4"/>
+                                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with papers=papersarr∼[{papersarr(p)}]" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="p31">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p37">
+                                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p35"/>
+                                                                <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p34" org.eventb.core.prInfHyps="p36"/>
+                                                                <org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p15,p34"/>
+                                                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p31"/>
+                                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p36"/>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
                                     </org.eventb.core.prAnte>
                                 </org.eventb.core.prRule>
                             </org.eventb.core.prAnte>
@@ -391,75 +429,133 @@
         <org.eventb.core.prIdent name="papers" org.eventb.core.type="ℙ(HOUSE)"/>
         <org.eventb.core.prIdent name="papersarr" org.eventb.core.type="ℙ(HOUSE×STATUS)"/>
         <org.eventb.core.prIdent name="present" org.eventb.core.type="STATUS"/>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="house∈HOUSE"/>
-        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="papers⊆HOUSE"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="card(papers) − 1=card(papers ∖ {p})"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="num=card(papers)"/>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="response∈STATUS">
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="papers=papersarr∼[{papersarr(p)}]"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="papers⊆HOUSE"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="card(papers) − 1=card(papers ∖ {p})"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="response∈STATUS">
             <org.eventb.core.prIdent name="response" org.eventb.core.type="STATUS"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈dom(papersarr)"/>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="num − 1=card(papers ∖ {p})"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="papersarr(house)=present"/>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="house=p"/>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="answer∈BOOL">
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="finite(papersarr∼[{present}])"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(papers)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="answer=TRUE⇔response=present">
+            <org.eventb.core.prIdent name="answer" org.eventb.core.type="BOOL"/>
+            <org.eventb.core.prIdent name="response" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="card(papers) − 1=card(papersarr∼[{papersarr(house)}]) − 1"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬papersarr(p)=absent">
+            <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="num − 1=card(papersarr∼[{present}]) − 1"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="card(papersarr∼[{papersarr(p)}]) − 1=card(papersarr∼[{papersarr(p)}] ∖ {p})"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="answer∈BOOL">
             <org.eventb.core.prIdent name="answer" org.eventb.core.type="BOOL"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="house∈dom(papersarr)"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="finite(papersarr∼[{papersarr(p)}] ∖ {p})"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="p∈dom(papersarr)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="card(papers) − 1=card(papersarr∼[{present}]) − 1"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="papersarr(house)=present"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="papersarr∈HOUSE ⇸ STATUS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬present=absent">
+            <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬papersarr(house)=absent">
+            <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="num=card(papers)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="num∈ℕ"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="answer=TRUE⇔response=papersarr(p)">
+            <org.eventb.core.prIdent name="answer" org.eventb.core.type="BOOL"/>
+            <org.eventb.core.prIdent name="response" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="finite(papers ∖ {p})"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="finite(papersarr∼[{papersarr(p)}])"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="house=p"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="house∈dom(papersarr)"/>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="card(papers) − 1=card(papersarr∼[{papersarr(p)}]) − 1"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="papers=papersarr∼[{present}]"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="papers=papersarr∼[{papersarr(house)}]"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="STATUS={papersarr(p),absent}">
+            <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="finite(papersarr∼[{papersarr(house)}])"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="num − 1=card(papers ∖ {p})"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="STATUS={papersarr(house),absent}">
+            <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="card(papers)∈ℕ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="STATUS={present,absent}">
+            <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="answer=TRUE⇔response=papersarr(house)">
+            <org.eventb.core.prIdent name="answer" org.eventb.core.type="BOOL"/>
+            <org.eventb.core.prIdent name="response" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="card(papersarr∼[{papersarr(p)}]) − 1=card(papersarr∼[{papersarr(p)}]) − 1"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="answer=FALSE⇔response=absent">
+            <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+            <org.eventb.core.prIdent name="answer" org.eventb.core.type="BOOL"/>
+            <org.eventb.core.prIdent name="response" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="removepaper/grd2/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="HOUSE,STATUS">
+    <org.eventb.core.prProof name="removepaper/grd2/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15" org.eventb.core.prSets="HOUSE,STATUS" org.eventb.core.psManual="true">
         <org.eventb.core.lang name="L"/>
         <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
             <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
-                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
-                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p13"/>
-                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p14"/>
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with house=p" org.eventb.core.prHyps="p7">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p16"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with house=p" org.eventb.core.prHyps="p8">
                     <org.eventb.core.prAnte name="'">
-                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p10" org.eventb.core.prInfHyps="p15"/>
+                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p10" org.eventb.core.prInfHyps="p17"/>
                         <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p10"/>
-                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p2,p6,p4,p1,p5,p3,p9,p10,p15">
-                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with papersarr(house)=present" org.eventb.core.prHyps="p12">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ProB (no enumeration / all cases checked)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p17,p12,p13,p14,p15"/>
+                            </org.eventb.core.prAnte>
                         </org.eventb.core.prRule>
                     </org.eventb.core.prAnte>
                 </org.eventb.core.prRule>
             </org.eventb.core.prAnte>
         </org.eventb.core.prRule>
         <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
+        <org.eventb.core.prIdent name="answer" org.eventb.core.type="BOOL"/>
         <org.eventb.core.prIdent name="house" org.eventb.core.type="HOUSE"/>
         <org.eventb.core.prIdent name="num" org.eventb.core.type="ℤ"/>
         <org.eventb.core.prIdent name="p" org.eventb.core.type="HOUSE"/>
         <org.eventb.core.prIdent name="papers" org.eventb.core.type="ℙ(HOUSE)"/>
         <org.eventb.core.prIdent name="papersarr" org.eventb.core.type="ℙ(HOUSE×STATUS)"/>
         <org.eventb.core.prIdent name="present" org.eventb.core.type="STATUS"/>
+        <org.eventb.core.prIdent name="response" org.eventb.core.type="STATUS"/>
         <org.eventb.core.prPred name="p0" org.eventb.core.predicate="p∈papers"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬present=absent"/>
-        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="papers⊆HOUSE"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬present=absent"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="papers⊆HOUSE"/>
         <org.eventb.core.prPred name="p3" org.eventb.core.predicate="num=card(papers)"/>
         <org.eventb.core.prPred name="p4" org.eventb.core.predicate="num∈ℕ"/>
-        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="response∈STATUS">
-            <org.eventb.core.prIdent name="response" org.eventb.core.type="STATUS"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="finite(papers)"/>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="house=p"/>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="papers=dom(papersarr)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="response∈STATUS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="finite(papers)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="answer=TRUE⇔response=present"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="house=p"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="answer∈BOOL"/>
         <org.eventb.core.prPred name="p10" org.eventb.core.predicate="house∈dom(papersarr)"/>
-        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="answer∈BOOL">
-            <org.eventb.core.prIdent name="answer" org.eventb.core.type="BOOL"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="papers=papersarr∼[{present}]"/>
-        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="house∈HOUSE"/>
-        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="p∈dom(papersarr)"/>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="papersarr∈HOUSE ⇸ STATUS"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="STATUS={present,absent}"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="papers=papersarr∼[{present}]"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="house∈HOUSE"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="p∈dom(papersarr)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="papersarr(house)=present"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="papersarr∈HOUSE ⇸ STATUS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="STATUS={present,absent}"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="answer=FALSE⇔response=absent"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="de.prob.eventb.disprover.core.disproverReasoner"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="removepaper/p/WFIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="HOUSE">
         <org.eventb.core.lang name="L"/>
@@ -492,88 +588,10 @@
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.onePointRule:2"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="paperquery/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="HOUSE,STATUS" org.eventb.core.psManual="true">
+    <org.eventb.core.prProof name="paperquery/act1/SIM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15" org.eventb.core.prSets="HOUSE,STATUS" org.eventb.core.psManual="true">
         <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
-                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13,p14"/>
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-                    <org.eventb.core.prAnte name="'">
-                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
-                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p17"/>
-                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p18"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
-                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
-                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="">
-                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="p20">
-                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="">
-                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
-                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
-                                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
-                                                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
-                                                    <org.eventb.core.prAnte name="'">
-                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
-                                                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
-                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with house=p" org.eventb.core.prHyps="p9">
-                                                            <org.eventb.core.prAnte name="'">
-                                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p26"/>
-                                                                <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p24" org.eventb.core.prInfHyps="p27"/>
-                                                                <org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p25" org.eventb.core.prInfHyps="p28"/>
-                                                                <org.eventb.core.prHypAction name="DESELECT3" org.eventb.core.prHyps="p25,p24,p11"/>
-                                                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p9"/>
-                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with papersarr(p)=absent" org.eventb.core.prHyps="p28">
-                                                                    <org.eventb.core.prAnte name="'">
-                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p28"/>
-                                                                        <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="p10,p2,p8,p4,p1,p6,p3,p7,p12,p11,p20,p24,p25,p26,p27">
-                                                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
-                                                                        </org.eventb.core.prRule>
-                                                                    </org.eventb.core.prAnte>
-                                                                </org.eventb.core.prRule>
-                                                            </org.eventb.core.prAnte>
-                                                        </org.eventb.core.prRule>
-                                                    </org.eventb.core.prAnte>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                </org.eventb.core.prRule>
-                            </org.eventb.core.prAnte>
-                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p29">
-                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p29" org.eventb.core.prHyps="">
-                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="p30">
-                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="">
-                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31">
-                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p32"/>
-                                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p33"/>
-                                                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
-                                                    <org.eventb.core.prAnte name="'">
-                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
-                                                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
-                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with house=p" org.eventb.core.prHyps="p9">
-                                                            <org.eventb.core.prAnte name="'">
-                                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p26"/>
-                                                                <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p34" org.eventb.core.prInfHyps="p36"/>
-                                                                <org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p35" org.eventb.core.prInfHyps="p37"/>
-                                                                <org.eventb.core.prHypAction name="DESELECT3" org.eventb.core.prHyps="p35,p11,p34"/>
-                                                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p9"/>
-                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with papersarr(p)=present" org.eventb.core.prHyps="p36">
-                                                                    <org.eventb.core.prAnte name="'">
-                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p36"/>
-                                                                    </org.eventb.core.prAnte>
-                                                                </org.eventb.core.prRule>
-                                                            </org.eventb.core.prAnte>
-                                                        </org.eventb.core.prRule>
-                                                    </org.eventb.core.prAnte>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                </org.eventb.core.prRule>
-                            </org.eventb.core.prAnte>
-                        </org.eventb.core.prRule>
-                    </org.eventb.core.prAnte>
-                </org.eventb.core.prRule>
-            </org.eventb.core.prAnte>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p14,p1,p2,p10,p13,p4,p12,p7,p3,p5,p8,p15,p11,p9,p6">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="30000"/>
         </org.eventb.core.prRule>
         <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
         <org.eventb.core.prIdent name="answer" org.eventb.core.type="BOOL"/>
@@ -585,52 +603,23 @@
         <org.eventb.core.prIdent name="papersarr" org.eventb.core.type="ℙ(HOUSE×STATUS)"/>
         <org.eventb.core.prIdent name="present" org.eventb.core.type="STATUS"/>
         <org.eventb.core.prIdent name="response" org.eventb.core.type="STATUS"/>
-        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="p∈papers"/>
-        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="⊥⇔papersarr(house)=present"/>
-        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="answer'=FALSE⇔papersarr(house)=absent"/>
-        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="papers⊆HOUSE"/>
-        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬papersarr(house)=present"/>
-        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="response∈STATUS"/>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="finite(papers)"/>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="answer=TRUE⇔response=present"/>
-        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="¬papersarr(p)=absent"/>
-        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="answer∈BOOL"/>
-        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="papersarr(p)=present"/>
-        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬p∈papers⇒answer'=FALSE"/>
-        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="answer'=TRUE⇔papersarr(house)=present"/>
-        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬p∈papers"/>
-        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="p∈dom(papersarr)"/>
-        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="⊤⇔papersarr(house)=absent"/>
-        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="papersarr(house)=present"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="papersarr∈HOUSE ⇸ STATUS"/>
-        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="(p∈papers⇒answer'=TRUE)∧(¬p∈papers⇒answer'=FALSE)"/>
-        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="⊤⇔papersarr(house)=present"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬present=absent"/>
-        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬papersarr(house)=absent"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬present=absent"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="papers⊆HOUSE"/>
         <org.eventb.core.prPred name="p3" org.eventb.core.predicate="num=card(papers)"/>
         <org.eventb.core.prPred name="p4" org.eventb.core.predicate="num∈ℕ"/>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="(answer'=TRUE⇔papersarr(house)=present)∧(answer'=FALSE⇔papersarr(house)=absent)"/>
-        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="papersarr(house)=absent"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="response∈STATUS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="(answer'=TRUE⇔papersarr(house)=present)∧(answer'=FALSE⇔papersarr(house)=absent)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="finite(papers)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="answer=TRUE⇔response=present"/>
         <org.eventb.core.prPred name="p9" org.eventb.core.predicate="house=p"/>
-        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="answer'=FALSE"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="answer∈BOOL"/>
         <org.eventb.core.prPred name="p11" org.eventb.core.predicate="house∈dom(papersarr)"/>
-        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="p∈papers⇒answer'=TRUE"/>
-        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="¬papersarr(p)=present"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="papers=papersarr∼[{present}]"/>
-        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="papersarr(p)=absent"/>
-        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="⊥⇔papersarr(house)=absent"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="papers=papersarr∼[{present}]"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="papersarr∈HOUSE ⇸ STATUS"/>
         <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(p∈papers⇒answer'=TRUE)∧(p∉papers⇒answer'=FALSE)"/>
-        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="STATUS={present,absent}"/>
-        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="answer=FALSE⇔response=absent"/>
-        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="answer'=TRUE"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
-        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
-        <org.eventb.core.prReas name="r7" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="STATUS={present,absent}"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="answer=FALSE⇔response=absent"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="paperquery/p/WFIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="HOUSE">
         <org.eventb.core.lang name="L"/>
@@ -1024,15 +1013,26 @@
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="de.prob.eventb.disprover.core.disproverReasoner"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="INITIALISATION/inv8/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="STATUS">
+    <org.eventb.core.prProof name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="STATUS">
         <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
         </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
         <org.eventb.core.prIdent name="present" org.eventb.core.type="STATUS"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊥"/>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=TRUE⇔present=present"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬present=absent"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=TRUE⇔absent=present"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="FALSE=TRUE⇔⊥"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="paperquery/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="HOUSE,STATUS">
         <org.eventb.core.lang name="L"/>
@@ -1060,23 +1060,18 @@
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="INITIALISATION/inv9/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="STATUS">
+    <org.eventb.core.prProof name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="STATUS">
         <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
-            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
-                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3"/>
-                </org.eventb.core.prRule>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
             </org.eventb.core.prAnte>
         </org.eventb.core.prRule>
         <org.eventb.core.prIdent name="absent" org.eventb.core.type="STATUS"/>
-        <org.eventb.core.prIdent name="present" org.eventb.core.type="STATUS"/>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊥"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬present=absent"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="FALSE=FALSE⇔⊥"/>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=FALSE⇔present=absent"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="FALSE=FALSE⇔absent=absent"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="paperquery/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="HOUSE,STATUS">
         <org.eventb.core.lang name="L"/>
@@ -1143,7 +1138,7 @@
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="removepaper/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="HOUSE,STATUS">
+    <org.eventb.core.prProof name="removepaper/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="HOUSE,STATUS" org.eventb.core.psManual="true">
         <org.eventb.core.lang name="L"/>
         <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
             <org.eventb.core.prAnte name="'">
@@ -1151,7 +1146,7 @@
                 <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
                 <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
                 <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p2,p7,p4,p1,p5,p3,p9,p6,p10,p11">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p9,p2,p8,p4,p1,p5,p3,p6,p10,p11,p7">
                     <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
                 </org.eventb.core.prRule>
             </org.eventb.core.prAnte>
@@ -1171,14 +1166,14 @@
         <org.eventb.core.prPred name="p14" org.eventb.core.predicate="response∈STATUS"/>
         <org.eventb.core.prPred name="p5" org.eventb.core.predicate="finite(papers)"/>
         <org.eventb.core.prPred name="p6" org.eventb.core.predicate="answer=TRUE⇔response=present"/>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="papers=dom(papersarr)"/>
         <org.eventb.core.prPred name="p11" org.eventb.core.predicate="house∈dom(papersarr)"/>
         <org.eventb.core.prPred name="p13" org.eventb.core.predicate="answer∈BOOL"/>
         <org.eventb.core.prPred name="p1" org.eventb.core.predicate="papers=papersarr∼[{present}]"/>
         <org.eventb.core.prPred name="p15" org.eventb.core.predicate="house∈HOUSE"/>
         <org.eventb.core.prPred name="p0" org.eventb.core.predicate="num − 1∈ℕ"/>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="papersarr∈HOUSE ⇸ STATUS"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="STATUS={present,absent}"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="papersarr(house)=present"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="papersarr∈HOUSE ⇸ STATUS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="STATUS={present,absent}"/>
         <org.eventb.core.prPred name="p10" org.eventb.core.predicate="answer=FALSE⇔response=absent"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
@@ -1277,5 +1272,47 @@
         <org.eventb.core.prPred name="p9" org.eventb.core.predicate="answer=FALSE⇔response=absent"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="removepaper/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="HOUSE,STATUS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="finite set" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p2">
+                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p7">
+                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p1"/>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prExprRef name=".expr" org.eventb.core.prRef="e0"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="papers" org.eventb.core.type="ℙ(HOUSE)"/>
+        <org.eventb.core.prIdent name="papersarr" org.eventb.core.type="ℙ(HOUSE×STATUS)"/>
+        <org.eventb.core.prIdent name="present" org.eventb.core.type="STATUS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="papers=papersarr∼[{present}]"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="papers⊆HOUSE"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="finite(papersarr∼[{present}])"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="response∈STATUS">
+            <org.eventb.core.prIdent name="response" org.eventb.core.type="STATUS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="finite(papers)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="papersarr∼[{present}]⊆papers"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="answer∈BOOL">
+            <org.eventb.core.prIdent name="answer" org.eventb.core.type="BOOL"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prExpr name="e0" org.eventb.core.expression="papers"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.finiteSet:0"/>
     </org.eventb.core.prProof>
 </org.eventb.core.prFile>
