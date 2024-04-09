@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="a ≔ ∅" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.refinesMachine name="(" org.eventb.core.target="Buffer"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="a"/>
+    <org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="a ∈ 1‥maxsize ⇸ ELEMENT"/>
+    <org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="add">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="add"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="remove">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="empty">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="empty"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="full">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="full"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="/" org.eventb.core.identifier="f"/>
+    <org.eventb.core.invariant name="0" org.eventb.core.label="inv2" org.eventb.core.predicate="∀n·(n∈dom(buffer) ⇒ buffer(n)=a((n mod maxsize)+1))"/>
+</org.eventb.core.machineFile>
