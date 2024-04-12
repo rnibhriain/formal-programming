@@ -45,8 +45,7 @@
     <org.eventb.core.variable name="1" org.eventb.core.identifier="removed"/>
     <org.eventb.core.invariant name="2" org.eventb.core.label="inv3" org.eventb.core.predicate="removed ∈ ELEMENT"/>
     <org.eventb.core.seesContext name="3" org.eventb.core.target="Buffer_ctx"/>
-    <org.eventb.core.invariant name="5" org.eventb.core.label="inv4" org.eventb.core.predicate="b ∈ ℕ1"/>
-    <org.eventb.core.invariant name="6" org.eventb.core.label="inv5" org.eventb.core.predicate="f ∈ ℕ1"/>
+    <org.eventb.core.invariant name="A" org.eventb.core.label="inv4" org.eventb.core.predicate="∀n·n∈ℕ ∧ maxsize &gt; 0 ⇒ (n mod maxsize + 1) ∈ 1 ‥ maxsize"/>
     <org.eventb.core.invariant name="7" org.eventb.core.label="inv6" org.eventb.core.predicate="b = back + 1"/>
     <org.eventb.core.invariant name="8" org.eventb.core.label="inv7" org.eventb.core.predicate="f = front + 1"/>
     <org.eventb.core.variable name="9" org.eventb.core.identifier="response"/>
