@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="77">
+<org.eventb.core.poFile org.eventb.core.poStamp="88">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="39">
         <org.eventb.core.poIdentifier name="ELEMENT" org.eventb.core.type="ℙ(ELEMENT)"/>
         <org.eventb.core.poIdentifier name="maxsize" org.eventb.core.type="ℤ"/>
@@ -123,25 +123,25 @@
         <org.eventb.core.poIdentifier name="stack'" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="EVTALLHYPStack_cu/" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTIDENTStack_cu\/" org.eventb.core.poStamp="77"/>
-    <org.eventb.core.poSequent name="push/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="84">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu0("/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(dom(stackarr))" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.guard#,"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.guard#,"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu0("/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="push/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="84">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu0)"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(stackarr)" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.guard#-"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.guard#-"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu0)"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="push/e/WFIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of witness" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/e/WFIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of witness" org.eventb.core.poStamp="85">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu0"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃e⦂ELEMENT·elmnt=e" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.witness#)"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.witness#)"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#push\/e\/WFIS|org.eventb.core.poPredicateSet#SEQHYP"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="push/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu0"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="stackarr∪{card(stackarr) ↦ elmnt}∈0 ‥ top+1 − 1 ⇸ ELEMENT" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#."/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12"/>
@@ -150,7 +150,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#push\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu,|org.eventb.core.poPredicate#PRD0"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="push/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu0"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(stackarr∪{card(stackarr) ↦ elmnt})" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#1"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12"/>
@@ -159,7 +159,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#push\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu,|org.eventb.core.poPredicate#PRD1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="push/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu0">
             <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="elmnt=e" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.witness#)"/>
         </org.eventb.core.poPredicateSet>
@@ -170,7 +170,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#push\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu,|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="push/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu0">
             <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="elmnt=e" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.witness#)"/>
         </org.eventb.core.poPredicateSet>
@@ -181,7 +181,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#push\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu,|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="push/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu0"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(stackarr∪{card(stackarr) ↦ elmnt})≤maxsize" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#="/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12"/>
@@ -190,7 +190,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#push\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu-|org.eventb.core.poPredicate#PRD7"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="push/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="85">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu0"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(stackarr∪{card(stackarr) ↦ elmnt})=top+1" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#&gt;"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12"/>
@@ -199,7 +199,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#push\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="push/grd2/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/grd2/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="85">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu0"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="top&lt;maxsize" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12|org.eventb.core.guard#internal_grd2"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt12"/>
@@ -207,7 +207,7 @@
         <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#push\/grd2\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="push/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="push/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="85">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu0">
             <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="elmnt=e" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.witness#)"/>
         </org.eventb.core.poPredicateSet>
@@ -228,28 +228,28 @@
     <org.eventb.core.poPredicateSet name="EVTHYPStack_cu0)" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu0(" org.eventb.core.poStamp="77">
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="card(dom(stackarr))&lt;maxsize" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.guard#,"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPStack_cu0" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu0)" org.eventb.core.poStamp="77">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPStack_cu0" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu0)" org.eventb.core.poStamp="85">
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card(stackarr)∉dom(stackarr)" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#)|org.eventb.core.guard#-"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="pop/grd1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/grd1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTIDENTStack_cu1"/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(dom(stackarr))" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(stackarr)" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#("/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#("/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTIDENTStack_cu1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu1("/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(stackarr)" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#."/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#."/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu1("/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu1)"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(stackarr)∧finite({card(stackarr) − 1} ⩤ stackarr)" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#-"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#-"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu1)"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{card(stackarr) − 1} ⩤ stackarr∈0 ‥ top − 1 − 1 ⇸ ELEMENT" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#."/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
@@ -258,7 +258,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#pop\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu,|org.eventb.core.poPredicate#PRD0"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite({card(stackarr) − 1} ⩤ stackarr)" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#1"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
@@ -267,7 +267,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#pop\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu,|org.eventb.core.poPredicate#PRD1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="dom({card(stackarr) − 1} ⩤ stackarr)=dom({top − 1} ⩤ stack)" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#8"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
@@ -276,7 +276,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#pop\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu,|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ran({card(stackarr) − 1} ⩤ stackarr)=ran({top − 1} ⩤ stack)" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#9"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
@@ -285,7 +285,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#pop\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu,|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="88">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="stackarr(card(stackarr) − 1)=stackarr(card(stackarr) − 1)" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#?"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
@@ -294,7 +294,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#pop\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu,|org.eventb.core.poPredicate#PRD6"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card({card(stackarr) − 1} ⩤ stackarr)≤maxsize" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#="/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
@@ -303,7 +303,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#pop\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#HYPStack_cu-|org.eventb.core.poPredicate#PRD7"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card({card(stackarr) − 1} ⩤ stackarr)=top − 1" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.invariant#&gt;"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
@@ -312,7 +312,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#pop\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="top&gt;0" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.guard#internal_grd1"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
@@ -320,7 +320,7 @@
         <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poSequent#pop\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="88">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1">
             <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="element'∈ran({top − 1} ◁ stack)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.action#internal_act1"/>
         </org.eventb.core.poPredicateSet>
@@ -328,7 +328,7 @@
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.action#)"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="87">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1">
             <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="element'∈ran({top − 1} ◁ stack)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.action#internal_act1"/>
         </org.eventb.core.poPredicateSet>
@@ -336,7 +336,7 @@
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.action#+"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="pop/act1/SIM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="77">
+    <org.eventb.core.poSequent name="pop/act1/SIM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="88">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTALLHYPStack_cu1"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="stackarr(card(stackarr) − 1)∈ran({top − 1} ◁ stack)" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13|org.eventb.core.action#internal_act1"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Stack/Stack.bum|org.eventb.core.machineFile#Stack|org.eventb.core.event#internal_evt13"/>
@@ -351,13 +351,13 @@
         <org.eventb.core.poIdentifier name="popped'" org.eventb.core.type="ELEMENT"/>
         <org.eventb.core.poIdentifier name="stack'" org.eventb.core.type="ℙ(ℤ×ELEMENT)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPStack_cu1(" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTIDENTStack_cu1" org.eventb.core.poStamp="0">
-        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="card(dom(stackarr))&gt;0" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#("/>
+    <org.eventb.core.poPredicateSet name="EVTHYPStack_cu1(" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTIDENTStack_cu1" org.eventb.core.poStamp="80">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="card(stackarr)&gt;0" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPStack_cu1)" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu1(" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTHYPStack_cu1)" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu1(" org.eventb.core.poStamp="80">
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="finite({card(stackarr) − 1} ⩤ stackarr)" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#."/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPStack_cu1" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu1)" org.eventb.core.poStamp="77">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPStack_cu1" org.eventb.core.parentSet="/Stack/StackR.bpo|org.eventb.core.poFile#StackR|org.eventb.core.poPredicateSet#EVTHYPStack_cu1)" org.eventb.core.poStamp="80">
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card({card(stackarr) − 1} ⩤ stackarr)=card(stackarr) − 1" org.eventb.core.source="/Stack/StackR.bum|org.eventb.core.machineFile#StackR|org.eventb.core.event#*|org.eventb.core.guard#-"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poSequent name="empty/query'/WFIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of witness" org.eventb.core.poStamp="77">

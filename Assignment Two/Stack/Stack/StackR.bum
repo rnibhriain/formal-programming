@@ -18,11 +18,11 @@
     </org.eventb.core.event>
     <org.eventb.core.event name="*" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="pop">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="pop"/>
-        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="card( dom(stackarr) ) &gt; 0"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="card(stackarr) &gt; 0"/>
         <org.eventb.core.action name=")" org.eventb.core.assignment="popped ≔ stackarr(card(stackarr) − 1)" org.eventb.core.label="act1"/>
         <org.eventb.core.action name="+" org.eventb.core.assignment="stackarr ≔ {card(stackarr) − 1} ⩤ stackarr" org.eventb.core.label="act2"/>
         <org.eventb.core.witness name="," org.eventb.core.label="element'" org.eventb.core.predicate="element' = popped'"/>
-        <org.eventb.core.guard name="." org.eventb.core.label="grd2" org.eventb.core.predicate="finite( {card(stackarr) − 1} ⩤ stackarr )"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd2" org.eventb.core.predicate="finite({card(stackarr) − 1} ⩤ stackarr)"/>
         <org.eventb.core.guard name="-" org.eventb.core.label="grd3" org.eventb.core.predicate="card({card(stackarr)−1} ⩤ stackarr) = card(stackarr)−1"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="empty">
