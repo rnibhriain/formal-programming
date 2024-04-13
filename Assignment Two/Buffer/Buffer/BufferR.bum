@@ -24,7 +24,7 @@
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove"/>
         <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="b − f &gt; 0"/>
         <org.eventb.core.action name=")" org.eventb.core.assignment="removed ≔ a((f mod maxsize) + 1)" org.eventb.core.label="act1"/>
-        <org.eventb.core.witness name="*" org.eventb.core.label="element'" org.eventb.core.predicate="removed' = element'"/>
+        <org.eventb.core.witness name="*" org.eventb.core.label="element'" org.eventb.core.predicate="removed = element'"/>
         <org.eventb.core.action name="," org.eventb.core.assignment="f ≔ f + 1" org.eventb.core.label="act2"/>
         <org.eventb.core.guard name="-" org.eventb.core.label="grd2" org.eventb.core.predicate="f ∈ f ‥ b"/>
         <org.eventb.core.guard name="." org.eventb.core.label="grd3" org.eventb.core.predicate="(f mod maxsize) + 1 ∈ dom(a)"/>
@@ -46,14 +46,11 @@
     <org.eventb.core.invariant name="2" org.eventb.core.label="inv3" org.eventb.core.predicate="removed ∈ ELEMENT"/>
     <org.eventb.core.seesContext name="3" org.eventb.core.target="Buffer_ctx"/>
     <org.eventb.core.invariant name="A" org.eventb.core.label="inv4" org.eventb.core.predicate="∀n·n∈ℕ ∧ maxsize &gt; 0 ⇒ (n mod maxsize + 1) ∈ 1 ‥ maxsize"/>
-    <org.eventb.core.invariant name="E" org.eventb.core.label="inv14" org.eventb.core.predicate="¬ a = ∅"/>
-    <org.eventb.core.invariant name="D" org.eventb.core.label="inv13" org.eventb.core.predicate="finite(a)"/>
-    <org.eventb.core.invariant name="C" org.eventb.core.label="inv12" org.eventb.core.predicate="card(a) = maxsize"/>
     <org.eventb.core.invariant name="7" org.eventb.core.label="inv6" org.eventb.core.predicate="b = back + 1"/>
     <org.eventb.core.invariant name="8" org.eventb.core.label="inv7" org.eventb.core.predicate="f = front + 1"/>
     <org.eventb.core.variable name="9" org.eventb.core.identifier="response"/>
     <org.eventb.core.invariant name=":" org.eventb.core.label="inv8" org.eventb.core.predicate="response ∈ BOOL"/>
-    <org.eventb.core.invariant name="=" org.eventb.core.label="inv9" org.eventb.core.predicate="∀n·n∈dom(buffer) ⇒ buffer(n)=a((n mod maxsize) + 1)"/>
+    <org.eventb.core.invariant name="=" org.eventb.core.label="inv9" org.eventb.core.predicate="∀n·n∈dom(buffer) ⇒ buffer(n)=a((n mod maxsize)+1)"/>
     <org.eventb.core.invariant name="&gt;" org.eventb.core.label="inv10" org.eventb.core.predicate="response = query"/>
     <org.eventb.core.invariant name="B" org.eventb.core.label="inv11" org.eventb.core.predicate="b − f ≤ maxsize"/>
 </org.eventb.core.machineFile>
