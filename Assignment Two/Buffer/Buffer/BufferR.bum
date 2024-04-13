@@ -50,6 +50,8 @@
     <org.eventb.core.invariant name="8" org.eventb.core.label="inv7" org.eventb.core.predicate="f = front + 1"/>
     <org.eventb.core.variable name="9" org.eventb.core.identifier="response"/>
     <org.eventb.core.invariant name=":" org.eventb.core.label="inv8" org.eventb.core.predicate="response ∈ BOOL"/>
+    <org.eventb.core.invariant name="C" org.eventb.core.label="inv12" org.eventb.core.predicate="a ≠ ∅"/>
+    <org.eventb.core.invariant name="D" org.eventb.core.label="inv13" org.eventb.core.predicate="1‥maxsize ⊆ dom(a)"/>
     <org.eventb.core.invariant name="=" org.eventb.core.label="inv9" org.eventb.core.predicate="∀n·n∈dom(buffer) ⇒ buffer(n)=a((n mod maxsize)+1)"/>
     <org.eventb.core.invariant name="&gt;" org.eventb.core.label="inv10" org.eventb.core.predicate="response = query"/>
     <org.eventb.core.invariant name="B" org.eventb.core.label="inv11" org.eventb.core.predicate="b − f ≤ maxsize"/>
