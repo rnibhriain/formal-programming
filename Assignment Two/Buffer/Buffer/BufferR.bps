@@ -15,16 +15,16 @@
     <org.eventb.core.psStatus name="INITIALISATION/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="INITIALISATION/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="INITIALISATION/act4/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="add/e/WFIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="add/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="add/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="add/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="add/inv12/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="add/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="add/inv9/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="81" org.eventb.core.psManual="true"/>
-    <org.eventb.core.psStatus name="add/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="add/grd2/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="true"/>
-    <org.eventb.core.psStatus name="add/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="add/e/WFIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="82" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="add/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="82" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="add/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="82" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="add/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="82" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="add/inv12/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="82" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="add/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="82" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="add/inv9/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="81" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
+    <org.eventb.core.psStatus name="add/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="82" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="add/grd2/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="82" org.eventb.core.psManual="true"/>
+    <org.eventb.core.psStatus name="add/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="82" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="remove/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="remove/element'/WFIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="remove/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="81" org.eventb.core.psManual="false"/>

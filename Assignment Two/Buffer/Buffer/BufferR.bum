@@ -18,7 +18,7 @@
         <org.eventb.core.witness name="*" org.eventb.core.label="e" org.eventb.core.predicate="elmnt = e"/>
         <org.eventb.core.action name="+" org.eventb.core.assignment="a ≔ a  {((b mod maxsize) + 1) ↦ elmnt}" org.eventb.core.label="act1"/>
         <org.eventb.core.action name="," org.eventb.core.assignment="b ≔ b + 1" org.eventb.core.label="act2"/>
-        <org.eventb.core.guard name="-" org.eventb.core.label="grd2" org.eventb.core.predicate="b+1 − f ≤ maxsize"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd2" org.eventb.core.predicate="b+1 − f &lt; maxsize"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="remove">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="remove"/>
