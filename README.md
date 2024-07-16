@@ -1,4 +1,4 @@
-# formal-programming
+# Formal Programming
 All assignments for module: CA648
 
 ## Assignment One
